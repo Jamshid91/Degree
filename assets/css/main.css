@@ -1,0 +1,264 @@
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 16px; }
+  body .container {
+    padding: 4rem 0; }
+  body .btn {
+    width: 225px;
+    height: 60px;
+    background-color: #19b5fe;
+    color: #FFFFFF;
+    border-radius: 50px;
+    font-size: 1em; }
+    body .btn:hover {
+      background-color: #FFFFFF;
+      border: 2px solid #19b5fe;
+      color: #19b5fe; }
+  body a:hover {
+    cursor: pointer; }
+  body header {
+    background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body header .row {
+      padding-top: 3rem; }
+    body header .phone h4 {
+      color: #FFFFFF;
+      font-size: 0.7em;
+      font-weight: 300; }
+      body header .phone h4 p {
+        font-size: 1.6em;
+        font-weight: 500; }
+    body header .nav span {
+      width: 40px;
+      height: 3px;
+      margin: 0.2rem 0;
+      background-color: #FFFFFF;
+      cursor: pointer; }
+      body header .nav span:hover {
+        background-color: #19b5fe; }
+    body header .nav p {
+      color: #FFFFFF;
+      cursor: pointer; }
+      body header .nav p:hover {
+        color: #19b5fe; }
+    body header .cat {
+      -webkit-transition: all 1s;
+      transition: all 1s; }
+      body header .cat:hover {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg); }
+  body .text-sup {
+    color: #FFFFFF; }
+    body .text-sup h1 {
+      font-size: 3em; }
+    body .text-sup h3 {
+      font-size: 2em; }
+    body .text-sup p {
+      padding-top: 4rem;
+      font-size: 1.4em;
+      font-weight: 100; }
+  body .contact input {
+    width: 290px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 2rem;
+    margin-left: 0.8rem; }
+    body .contact input:focus {
+      outline: none; }
+    body .contact input:active {
+      border: 2px solid #19b5fe; }
+  body .temp p {
+    color: #FFFFFF;
+    font-weight: 100;
+    padding-top: 2rem; }
+  body .temp img {
+    padding-top: 7rem;
+    padding-bottom: 5rem; }
+  body .dizane img {
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    body .dizane img:hover {
+      -webkit-transform: scale(1.03);
+              transform: scale(1.03); }
+  body .dizane .my h1 {
+    font-size: 2.2em;
+    font-weight: 400; }
+  body .dizane .my hr {
+    width: 380px;
+    background-color: #19b5fe;
+    margin-top: 1.5rem; }
+  body .dizane .integer {
+    padding-top: 5rem; }
+    body .dizane .integer h2 {
+      color: #19b5fe; }
+    body .dizane .integer button {
+      margin-top: 3rem; }
+  body .dizane .extra {
+    padding-top: 5rem; }
+  body .dizane h2 {
+    color: #19b5fe; }
+  body .dizane button {
+    margin-top: 3rem; }
+  body main {
+    background-image: url(../images/changeHouse.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    body main .main-text h1 {
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #FFFFFF; }
+    body main .main-text hr {
+      width: 380px;
+      background-color: #FFFFFF;
+      margin-top: 1.5rem; }
+    body main .main-text p {
+      color: #FFFFFF;
+      font-weight: 300;
+      font-size: 1.5em;
+      padding-bottom: 4rem; }
+    body main .radio {
+      -webkit-box-shadow: 0 0 4px #fff;
+              box-shadow: 0 0 4px #fff; }
+      body main .radio ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 2rem; }
+      body main .radio li {
+        list-style-type: none; }
+      body main .radio span {
+        color: #FFFFFF;
+        font-weight: 200; }
+      body main .radio h4 {
+        color: #FFFFFF;
+        font-weight: 300;
+        padding: 1rem 2rem 0 1rem; }
+      body main .radio input[type="radio"] {
+        margin: 0 4rem; }
+    body main .paket {
+      -webkit-box-shadow: 0 0 4px #fff;
+              box-shadow: 0 0 4px #fff; }
+      body main .paket h4 {
+        color: #FFFFFF;
+        font-weight: 300;
+        padding: 1rem 0 1rem 1rem; }
+      body main .paket button {
+        width: 195px;
+        height: 45px;
+        background: none;
+        margin: 1rem 0.9rem;
+        color: #FFFFFF;
+        -webkit-transition: all 1s;
+        transition: all 1s; }
+        body main .paket button:hover {
+          -webkit-transform: scale(1.01);
+                  transform: scale(1.01);
+          background-color: #19b5fe;
+          color: #FFFFFF;
+          border: none; }
+    body main .check p {
+      color: #FFFFFF;
+      font-weight: 100; }
+    body main .check span {
+      color: #FFFFFF;
+      font-size: 1.5em; }
+    body main .check .btn {
+      width: 31rem;
+      height: 5rem;
+      border-radius: 5rem;
+      font-size: 0.9em;
+      margin: 2rem 0; }
+    body main .check h4 {
+      color: #FFFFFF; }
+    body main .check h5 {
+      color: #FFFFFF;
+      font-weight: 100; }
+  body .portfel .row {
+    margin: 4rem 0; }
+  body .portfel h1 {
+    font-size: 2.2em;
+    font-weight: 400; }
+  body .portfel hr {
+    width: 380px;
+    background-color: #19b5fe;
+    margin-top: 1.5rem; }
+  body .portfel button {
+    padding: 1rem 2rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    background: none;
+    border: 2px solid #19b5fe;
+    color: #19b5fe;
+    text-transform: uppercase; }
+    body .portfel button:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+      background-color: #19b5fe;
+      color: #FFFFFF;
+      border-radius: 1rem; }
+  body .portfel .end-btn {
+    border-radius: 0 2rem 2rem 0; }
+  body .portfel .start-btn {
+    border-radius: 2rem 0 0 2rem; }
+  body .portfel img {
+    margin-bottom: 2rem;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    body .portfel img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  body aside {
+    background-color: #f5f9fa; }
+    body aside .row {
+      margin: 4rem 0; }
+    body aside .aside-text h1 {
+      font-size: 2.2em;
+      font-weight: 400; }
+    body aside .aside-text hr {
+      width: 380px;
+      background-color: #19b5fe;
+      margin-top: 1.5rem; }
+    body aside hr {
+      width: 130px;
+      background-color: #19b5fe;
+      margin-top: 1.5rem; }
+    body aside p {
+      font-size: 0.8em; }
+  body .prosess h1 {
+    font-size: 2.2em;
+    font-weight: 400; }
+  body .prosess hr {
+    width: 380px;
+    background-color: #19b5fe;
+    margin-top: 1.5rem; }
+  body .prosess p {
+    font-size: 2em;
+    -webkit-columns: #464646;
+            columns: #464646; }
+  body .prosess img {
+    margin-bottom: 2rem;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    body .prosess img:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 20px; }
+    body header .phone h4 {
+      font-size: 1rem; } }
+@media screen and (max-width: 768px) {
+  body header .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end; } }
