@@ -41,19 +41,33 @@ body {
       body header .phone h4 p {
         font-size: 1.6em;
         font-weight: 500; }
-    body header .nav span {
+    body header .nav .menu-burger span {
+      display: block;
       width: 40px;
       height: 3px;
       margin: 0.2rem 0;
       background-color: #FFFFFF;
       cursor: pointer; }
-      body header .nav span:hover {
+      body header .nav .menu-burger span:hover {
         background-color: #19b5fe; }
     body header .nav p {
       color: #FFFFFF;
       cursor: pointer; }
       body header .nav p:hover {
         color: #19b5fe; }
+    body header .nav .hidden {
+      display: none; }
+    body header .nav ul {
+      -webkit-box-shadow: 0 0 3px #19b5fe;
+              box-shadow: 0 0 3px #19b5fe; }
+      body header .nav ul li {
+        display: block;
+        font-size: 1.2em; }
+        body header .nav ul li a {
+          color: #FFFFFF;
+          text-decoration: none; }
+          body header .nav ul li a:hover {
+            color: #19b5fe; }
     body header .cat {
       -webkit-transition: all 1s;
       transition: all 1s; }
@@ -90,30 +104,30 @@ body {
   body .temp img {
     padding-top: 7rem;
     padding-bottom: 5rem; }
-  body .dizane img {
+  body .design img {
     -webkit-transition: 0.5s;
     transition: 0.5s; }
-    body .dizane img:hover {
+    body .design img:hover {
       -webkit-transform: scale(1.03);
               transform: scale(1.03); }
-  body .dizane .my h1 {
+  body .design .my h1 {
     font-size: 2.2em;
     font-weight: 400; }
-  body .dizane .my hr {
+  body .design .my hr {
     width: 380px;
     background-color: #19b5fe;
     margin-top: 1.5rem; }
-  body .dizane .integer {
+  body .design .integer {
     padding-top: 5rem; }
-    body .dizane .integer h2 {
+    body .design .integer h2 {
       color: #19b5fe; }
-    body .dizane .integer button {
+    body .design .integer button {
       margin-top: 3rem; }
-  body .dizane .extra {
+  body .design .extra {
     padding-top: 5rem; }
-  body .dizane h2 {
+  body .design h2 {
     color: #19b5fe; }
-  body .dizane button {
+  body .design button {
     margin-top: 3rem; }
   body main {
     background-image: url(../images/changeHouse.png);
@@ -375,7 +389,7 @@ body {
 @media screen and (max-width: 992px) {
   body header .phone h4 {
     font-size: 1rem; }
-  body .dizane img {
+  body .design img {
     width: 100%; }
   body main .radio ul li {
     margin-right: 0.2rem; }
@@ -442,9 +456,9 @@ body {
             flex-direction: column; }
     body header .contact input {
       width: 100%; }
-  body .dizane h2 {
+  body .design h2 {
     text-align: center; }
-  body .dizane .btn {
+  body .design .btn {
     width: 100%;
     margin-bottom: 2rem; }
   body main span {
@@ -492,8 +506,19 @@ body {
 @media screen and (max-width: 576px) {
   body {
     font-size: 18px; }
-    body header .menu .phone p {
-      font-size: 1.4em; }
+    body header .menu .phone {
+      margin-top: 3rem; }
+      body header .menu .phone h4 {
+        font-size: 1em; }
+    body header .menu .nav {
+      margin-top: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      margin-left: auto; }
     body header .menu .logo {
       width: 100px;
       height: 50px; }
@@ -505,9 +530,9 @@ body {
       font-size: 1.5em; }
     body header .text-sup p {
       font-size: 1em; }
-    body .dizane .row {
+    body .design .row {
       margin: 0 3rem; }
-    body .dizane hr {
+    body .design hr {
       display: none; }
     body main .row {
       margin: 0 3rem; }
@@ -581,11 +606,14 @@ body {
       display: none; }
     body .quation hr {
       display: none; }
-    body .quation input {
-      margin: 0.5rem 15rem; }
-    body .quation textarea {
-      width: 25rem;
-      height: 10rem;
-      margin: 1rem 5rem; }
-    body .quation button {
-      margin: 1rem 17rem; } }
+    body footer .footer-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
