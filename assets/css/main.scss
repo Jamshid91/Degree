@@ -3,6 +3,7 @@ $primary-color: #3F51B5;
 $primary-color-light: #C5CAE9;
 $primary-color-text: #FFFFFF;
 $accent-color: #19b5fe;
+$accent-color-light: #f5f9fa;
 $primary-text-color: #363636;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
@@ -35,6 +36,21 @@ body {
 
   a:hover {
     cursor: pointer;
+  }
+
+  i {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $primary-color-text;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    color: $primary-color-text;
+    margin: 1rem;
+
+    &:hover {
+      border: 1px solid $accent-color;
+      color: $accent-color;
+    }
   }
 
   // Header
@@ -235,6 +251,7 @@ body {
       span {
         color: $primary-color-text;
         font-weight: 200;
+        font-size: 2rem;
       }
 
       h4 {
@@ -427,6 +444,31 @@ body {
     }
   }
 
+  // *************************************
+
+  .company {
+    background-color: $accent-color-light;
+
+    h1 {
+      font-size: 2.2em;
+      font-weight: 400;
+    }
+
+    hr {
+      width: 380px;
+      background-color: $accent-color;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    input[type="range"] {
+      margin-top: 3rem;
+      width: 110rem;
+    }
+  }
+
+  // *************************************
+
   .my-comand {
     h1 {
       font-size: 2.2em;
@@ -467,7 +509,7 @@ body {
 
   // **************************************************
   .blog {
-    background-color: #f5f9fa;
+    background-color: $accent-color-light;
 
     .blog-text {
       margin-bottom: 3rem;
@@ -535,6 +577,54 @@ body {
       border-radius: 10px;
       padding: 1.2rem;
       margin: 1rem 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .icons {
+      li {
+        display: block;
+
+        span {
+          color: $primary-color-text;
+        }
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  // ****************************************************
+
+  footer {
+    background-color: #24241f;
+
+    p {
+      font-size: 0.85em;
+      color: $primary-color-text;
+    }
+
+    a {
+      p {
+        font-size: 0.85em;
+        color: $primary-color-text;
+
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+
+    hr {
+      background-color: #50504c;
+    }
+
+    img {
+      vertical-align: middle;
     }
   }
 }

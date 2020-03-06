@@ -18,6 +18,17 @@ body {
       color: #19b5fe; }
   body a:hover {
     cursor: pointer; }
+  body i {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    color: #FFFFFF;
+    margin: 1rem; }
+    body i:hover {
+      border: 1px solid #19b5fe;
+      color: #19b5fe; }
   body header {
     background-image: url(../images/header.png);
     background-size: cover;
@@ -134,7 +145,8 @@ body {
         list-style-type: none; }
       body main .radio span {
         color: #FFFFFF;
-        font-weight: 200; }
+        font-weight: 200;
+        font-size: 2rem; }
       body main .radio h4 {
         color: #FFFFFF;
         font-weight: 300;
@@ -255,6 +267,19 @@ body {
     body .prosess img:hover {
       -webkit-transform: scale(1.05);
               transform: scale(1.05); }
+  body .company {
+    background-color: #f5f9fa; }
+    body .company h1 {
+      font-size: 2.2em;
+      font-weight: 400; }
+    body .company hr {
+      width: 380px;
+      background-color: #19b5fe;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem; }
+    body .company input[type="range"] {
+      margin-top: 3rem;
+      width: 110rem; }
   body .my-comand h1 {
     font-size: 2.2em;
     font-weight: 400; }
@@ -323,17 +348,244 @@ body {
       border-radius: 10px;
       padding: 1.2rem;
       margin: 1rem 0; }
+      body .quation textarea:focus {
+        outline: none; }
+    body .quation .icons li {
+      display: block; }
+      body .quation .icons li span {
+        color: #FFFFFF; }
+    body .quation .icons p {
+      font-size: 0.9em; }
+  body footer {
+    background-color: #24241f; }
+    body footer p {
+      font-size: 0.85em;
+      color: #FFFFFF; }
+    body footer a p {
+      font-size: 0.85em;
+      color: #FFFFFF; }
+      body footer a p:hover {
+        color: #19b5fe; }
+    body footer hr {
+      background-color: #50504c; }
+    body footer img {
+      vertical-align: middle; }
 
+/* *******DESKTOP LARGE SCREEN SIZE******** */
 @media screen and (max-width: 992px) {
-  body {
-    font-size: 20px; }
-    body header .phone h4 {
-      font-size: 1rem; } }
+  body header .phone h4 {
+    font-size: 1rem; }
+  body .dizane img {
+    width: 100%; }
+  body main .radio ul li {
+    margin-right: 0.2rem; }
+    body main .radio ul li span {
+      font-size: 1em; }
+    body main .radio ul li input[type="radio"] {
+      width: 2rem;
+      height: 2rem;
+      margin-left: 1.1rem; }
+  body main .paket {
+    padding-bottom: 1rem; }
+    body main .paket button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      margin: 1rem auto;
+      width: 80%; }
+  body main .check .btn {
+    width: 90%; }
+  body .portfel .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.8em; }
+  body .quation input {
+    width: 46.5rem;
+    height: 5rem;
+    margin-top: 1rem; }
+  body .quation .icons {
+    display: inline-block;
+    margin: 2rem auto;
+    margin-bottom: -3rem; } }
+/* ********TABLET MEDIUM SCREEN SIZE********** */
 @media screen and (max-width: 768px) {
+  body header .logo {
+    padding-left: 3rem; }
   body header .phone {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end; } }
+            justify-content: end;
+    padding-left: 4rem; }
+  body header .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body header .contact input {
+      width: 100%; }
+  body .dizane h2 {
+    text-align: center; }
+  body .dizane .btn {
+    width: 100%;
+    margin-bottom: 2rem; }
+  body main span {
+    font-size: 1.5em; }
+  body main .radio span {
+    font-size: 1em; }
+  body main .radio input[type="radio"] {
+    margin-top: 1.3rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem; }
+  body main .paket {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem; }
+  body main .check .btn {
+    width: 90%;
+    font-size: 1.2em; }
+  body main .check span {
+    font-size: 1.5em; }
+  body main .check p {
+    font-size: 1.5em; }
+  body .portfel .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.9em;
+    margin: 0 4rem; }
+    body .portfel .buttons .two-btn {
+      padding-bottom: 1rem; }
+    body .portfel .buttons .thr-btn {
+      border-right: 2px solid #19b5fe;
+      border-radius: 0 2rem 2rem 0; }
+    body .portfel .buttons .end-btn {
+      margin-top: 2rem;
+      border-radius: 2rem; }
+  body .quation input {
+    width: 26.5rem;
+    height: 5rem;
+    margin-top: 1rem; }
+  body .quation .icons {
+    display: inline-block;
+    margin: 2rem auto;
+    margin-bottom: -3rem; } }
+/* **********MOBILE SMALL SCREEN SIZE********** */
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 18px; }
+    body header .menu .phone p {
+      font-size: 1.4em; }
+    body header .menu .logo {
+      width: 100px;
+      height: 50px; }
+    body header .menu p {
+      font-size: 1em; }
+    body header .text-sup h1 {
+      font-size: 2em; }
+    body header .text-sup h3 {
+      font-size: 1.5em; }
+    body header .text-sup p {
+      font-size: 1em; }
+    body .dizane .row {
+      margin: 0 3rem; }
+    body .dizane hr {
+      display: none; }
+    body main .row {
+      margin: 0 3rem; }
+    body main h1 {
+      padding-bottom: 2rem; }
+    body main hr {
+      display: none; }
+    body main .radio ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      body main .radio ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        body main .radio ul li input[type="radio"] {
+          margin-top: 1.3rem;
+          width: 3rem;
+          height: 3rem; }
+    body .portfel hr {
+      display: none; }
+    body .portfel .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      font-size: 1.5em; }
+      body .portfel .buttons a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        body .portfel .buttons a button {
+          border-right: 2px solid #19b5fe;
+          border-radius: 1rem;
+          margin-bottom: 1rem; }
+        body .portfel .buttons a .thr-btn {
+          border-radius: 1rem; }
+        body .portfel .buttons a .end-btn {
+          border-radius: 1rem;
+          margin-top: 0.2rem; }
+    body aside .aside-text hr {
+      display: none; }
+    body .prosess hr {
+      display: none; }
+    body .prosess p {
+      font-size: 1.5em; }
+    body .company .comp-text h1 {
+      padding-bottom: 4rem;
+      font-size: 1.7em; }
+    body .company .comp-text hr {
+      display: none; }
+    body .company input[type="range"] {
+      width: 90rem; }
+    body .my-comand hr {
+      display: none; }
+    body .blog hr {
+      display: none; }
+    body .quation hr {
+      display: none; }
+    body .quation input {
+      margin: 0.5rem 15rem; }
+    body .quation textarea {
+      width: 25rem;
+      height: 10rem;
+      margin: 1rem 5rem; }
+    body .quation button {
+      margin: 1rem 17rem; } }
