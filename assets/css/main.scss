@@ -8,16 +8,45 @@ $primary-text-color: #363636;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+}
+
+.slider::-webkit-scrollbar:vertical {
+  width: 0;
+  background-color: red;
+}
+
+.slider::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+.slider::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #e3e7e8;
+  box-shadow: inset 0 0 0 4px #f5f9fa;
+
+}
+
+.slider::-webkit-scrollbar-thumb {
+  height: 20px;
+  background-image: url(../images/thumb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 16px;
-
-  .container {
-    padding: 4rem 0;
-  }
 
   .btn {
     width: 225px;
@@ -60,134 +89,173 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-    .phone {
-      h4 {
-        color: $primary-color-text;
-        font-size: 0.7em;
-        font-weight: 300;
+    .menu {
+      padding-top: 3rem;
 
-        p {
-          font-size: 1.6em;
-          font-weight: 500;
+      .phone-text {
+        padding-left: 0.5rem;
+        padding-top: 0.8rem;
+
+
+        h4 {
+          color: $primary-color-text;
+          font-size: 0.75em;
+          font-weight: 300;
+
+          p {
+            font-size: 1.6em;
+            font-weight: 500;
+          }
         }
       }
-    }
 
-    .nav {
-      .menu-burger {
-        span {
-          display: block;
-          width: 40px;
-          height: 3px;
-          margin: 0.2rem 0;
-          background-color: $primary-color-text;
+      .nav {
+        .menu-burger {
+          span {
+            display: block;
+            width: 40px;
+            height: 3px;
+            margin: 0.2rem 0;
+            background-color: $primary-color-text;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $accent-color;
+            }
+          }
+        }
+
+
+
+        p {
+          color: $primary-color-text;
           cursor: pointer;
 
           &:hover {
-            background-color: $accent-color;
+            color: $accent-color;
+          }
+        }
+
+        .hidden {
+          position: absolute;
+          display: none;
+
+        }
+
+        ul {
+          box-shadow: 0 0 3px $accent-color;
+          position: absolute;
+          left: -6rem;
+          width: 22rem;
+          height: 27rem;
+
+          li {
+            display: block;
+            font-size: 1.2em;
+            box-shadow: 0 0 3px solid $primary-color-text;
+
+
+            a {
+              color: $primary-color-text;
+              text-decoration: none;
+
+              &:hover {
+                color: $accent-color;
+
+              }
+
+            }
           }
         }
       }
 
 
+    }
+
+    .bgc-btn {
+      position: absolute;
+      left: -12px;
+      top: 30px;
+      background-image: url(../images/left.png);
+      width: 954px;
+      height: 78px;
+      background-size: contain;
+    }
+
+    .text-sup {
+      color: $primary-color-text;
+      padding-top: 6rem;
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h3 {
+        font-size: 2em;
+      }
 
       p {
+        padding: 4.5rem 0;
+        font-size: 1.4em;
+        font-weight: 100;
+      }
+    }
+
+    .contact {
+      position: relative;
+
+      input {
+        width: 290px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        padding-left: 2rem;
+        margin-left: 0.8rem;
+        margin-bottom: 3.5rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:active {
+          border: 2px solid $accent-color;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: -1rem;
+    }
+
+
+    .temp {
+      p {
         color: $primary-color-text;
-        cursor: pointer;
+        font-weight: 100;
+        padding-top: 1.5rem;
+      }
 
-        &:hover {
-          color: $accent-color;
+      .cat {
+        padding-top: 7.5rem;
+        padding-bottom: 5.5rem;
+        animation: anim 1s alternate infinite;
+      }
+
+      @keyframes anim {
+        0% {
+          transform: scaleY(1);
         }
-      }
 
-      .hidden {
-        display: none;
-
-      }
-
-      ul {
-        box-shadow: 0 0 3px $accent-color;
-
-        li {
-          display: block;
-          font-size: 1.2em;
-
-          a {
-            color: $primary-color-text;
-            text-decoration: none;
-
-            &:hover {
-              color: $accent-color;
-            }
-
-          }
+        100% {
+          transform: scaleY(1.3);
         }
       }
     }
 
-    .cat {
-      transition: all 1s;
 
-      &:hover {
-        // transform: scaleY(1.1);
-        transform: rotate(360deg);
-      }
-    }
   }
 
-  .text-sup {
-    color: $primary-color-text;
-    padding-top: 8rem;
-
-    h1 {
-      font-size: 3em;
-    }
-
-    h3 {
-      font-size: 2em;
-    }
-
-    p {
-      padding: 4rem 0;
-      font-size: 1.4em;
-      font-weight: 100;
-    }
-  }
-
-  .contact {
-    input {
-      width: 290px;
-      height: 50px;
-      border-radius: 50px;
-      border: none;
-      padding-left: 2rem;
-      margin-left: 0.8rem;
-      margin-bottom: 3.5rem;
-
-      &:focus {
-        outline: none;
-      }
-
-      &:active {
-        border: 2px solid $accent-color;
-      }
-    }
-  }
-
-  .temp {
-    p {
-      color: $primary-color-text;
-      font-weight: 100;
-      padding-top: 2rem;
-    }
-
-    img {
-      padding-top: 7rem;
-      padding-bottom: 5rem;
-    }
-  }
-
-  // My Us
+  // *************************************************************
 
   .design {
     img {
@@ -199,40 +267,52 @@ body {
     }
 
     .my {
+      padding-top: 6.5rem;
+
       h1 {
-        font-size: 2.2em;
+        font-size: 2.25em;
         font-weight: 400;
       }
 
       hr {
         width: 380px;
+        height: 1.3px;
         background-color: $accent-color;
         margin-top: 1.5rem;
+        margin-bottom: 3.5rem;
       }
     }
 
-    .integer {
-      padding-top: 5rem;
-
+    .integer,
+    .extra,
+    .vis {
       h2 {
         color: $accent-color;
+        font-size: 1.75em;
+      }
+
+      p {
+        font-size: 1.15em;
       }
 
       button {
         margin-top: 3rem;
+        font-size: 0.85em;
+        margin-top: 3rem;
+        width: 18.5rem;
+        height: 5.5rem;
       }
+
+
     }
 
     .extra {
-      padding-top: 5rem;
+      margin: 2rem 0;
     }
 
-    h2 {
-      color: $accent-color;
-    }
-
-    button {
-      margin-top: 3rem;
+    .vis {
+      margin-top: 2rem;
+      margin-bottom: 7.5rem;
     }
   }
 
@@ -246,13 +326,15 @@ body {
 
     .main-text {
       h1 {
-        font-size: 2.2em;
+        font-size: 2.25em;
         font-weight: 400;
         color: $primary-color-text;
+        padding-top: 6.5rem;
       }
 
       hr {
         width: 380px;
+        height: 1.3px;
         background-color: $primary-color-text;
         margin-top: 1.5rem;
       }
@@ -260,54 +342,85 @@ body {
       p {
         color: $primary-color-text;
         font-weight: 300;
-        font-size: 1.5em;
+        font-size: 1.63em;
         padding-bottom: 4rem;
       }
     }
 
     .radio {
       box-shadow: 0 0 4px #fff;
+      position: relative;
 
       ul {
         display: flex;
-        padding-bottom: 2rem;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: -4rem;
+        margin-top: -4rem;
       }
 
       li {
         list-style-type: none;
+        padding: 2rem;
+
       }
 
       span {
         color: $primary-color-text;
         font-weight: 200;
-        font-size: 2rem;
+        // font-size: 2rem;
       }
 
       h4 {
         color: $primary-color-text;
-        font-weight: 300;
-        padding: 1rem 2rem 0 1rem;
+        font-weight: 400;
+        font-size: 1.25em;
+        padding: 1rem 0 0 1rem;
       }
 
-      input[type="radio"] {
-        margin: 0 4rem;
+      .inputs {
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem;
+        margin-top: -2rem;
+
+        input {
+          width: 2rem;
+          height: 2rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+
+      hr {
+        position: absolute;
+        width: 58rem;
+        height: 1rem;
+        background-color: #fff6;
+        border-radius: 10px;
+        top: 8rem;
+        left: 3.2rem;
+        margin: 0 auto;
       }
     }
 
     .paket {
       box-shadow: 0 0 4px #fff;
+      position: relative;
 
       h4 {
         color: $primary-color-text;
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 1.25em;
         padding: 1rem 0 1rem 1rem;
+        margin-top: -2rem;
       }
 
       button {
-        width: 195px;
-        height: 45px;
+        width: 19.5rem;
+        height: 4.5rem;
         background: none;
-        margin: 1rem 0.9rem;
+        margin-left: 1.3rem;
+        margin-bottom: 2.5rem;
         color: $primary-color-text;
         transition: all 1s;
 
@@ -319,17 +432,52 @@ body {
         }
       }
 
+      .textOne,
+      .textTwo,
+      .textThree {
+        display: none;
+      }
+
+      .btn-one-text,
+      .btn-two-text,
+      .btn-three-text {
+        width: 44.5rem;
+        height: 13rem;
+        clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+        background-color: #fff;
+        padding: 5rem 2rem;
+        font-size: 0.85em;
+        text-align: center;
+        position: absolute;
+        top: 8rem;
+        left: 10rem;
+        border-radius: 1rem;
+      }
+
+      .btn-one-text {
+        clip-path: polygon(25% 0, 31% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 20% 20%);
+        left: 0;
+      }
+
+      .btn-three-text {
+        left: 20.3rem;
+        clip-path: polygon(75% 0, 81% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 69% 20%);
+      }
+
+
     }
 
     .check {
-      p {
+      padding-bottom: 6.5rem;
+
+      strong {
         color: $primary-color-text;
         font-weight: 100;
       }
 
       span {
         color: $primary-color-text;
-        font-size: 1.5em;
+        font-size: 2em;
       }
 
       .btn {
@@ -337,7 +485,7 @@ body {
         height: 5rem;
         border-radius: 5rem;
         font-size: 0.9em;
-        margin: 2rem 0;
+        margin: 2rem auto;
       }
 
       h4 {
@@ -353,23 +501,26 @@ body {
 
   // ********************************
   .portfel {
-    .row {
-      margin: 4rem 0;
-    }
 
     h1 {
       font-size: 2.2em;
       font-weight: 400;
+      padding-top: 5rem;
     }
 
     hr {
       width: 380px;
+      height: 1.3px;
       background-color: $accent-color;
       margin-top: 1.5rem;
     }
 
+    .buttons {
+      margin: 2.5rem 0;
+    }
+
     button {
-      padding: 1rem 2rem;
+      padding: 1rem 4rem;
       transition: all 0.5s;
       background: none;
       border-right: none;
@@ -378,6 +529,7 @@ body {
       border-bottom: 2px solid $accent-color;
       color: $accent-color;
       text-transform: uppercase;
+      font-size: 0.85em;
 
       &:hover {
         transform: scale(1.05);
@@ -390,11 +542,16 @@ body {
     .end-btn {
       border-radius: 0 2rem 2rem 0;
       border-right: 2px solid $accent-color;
+      border-left: 1px solid $accent-color;
     }
 
     .start-btn {
       border-radius: 2rem 0 0 2rem;
       border-left: 2px solid $accent-color;
+    }
+
+    .imges {
+      padding: 5rem 0;
     }
 
     img {
@@ -411,21 +568,20 @@ body {
 
   aside {
     background-color: #f5f9fa;
-
-    .row {
-      margin: 4rem 0;
-    }
+    padding-bottom: 7rem;
 
     .aside-text {
       h1 {
         font-size: 2.2em;
         font-weight: 400;
+        padding-top: 5.5rem;
       }
 
       hr {
         width: 380px;
+        height: 1.3px;
         background-color: $accent-color;
-        margin-top: 1.5rem;
+        margin-bottom: -1.5rem;
       }
     }
 
@@ -433,6 +589,10 @@ body {
       width: 130px;
       background-color: $accent-color;
       margin-top: 1.5rem;
+    }
+
+    img {
+      margin-top: 5rem;
     }
 
     p {
@@ -443,6 +603,8 @@ body {
 
   // **************************
   .prosess {
+    padding: 7rem 0;
+
     .prosess-text {
       margin-bottom: 4rem;
     }
@@ -454,8 +616,9 @@ body {
 
     hr {
       width: 380px;
+      height: 1.3px;
       background-color: $accent-color;
-      margin-top: 1.5rem;
+      margin-top: 1.55rem;
     }
 
     p {
@@ -464,7 +627,6 @@ body {
     }
 
     img {
-      margin-bottom: 2rem;
       transition: all 1s;
 
       &:hover {
@@ -477,6 +639,7 @@ body {
 
   .company {
     background-color: $accent-color-light;
+    padding: 5rem 0 6rem 0;
 
     h1 {
       font-size: 2.2em;
@@ -485,6 +648,7 @@ body {
 
     hr {
       width: 380px;
+      height: 1.3px;
       background-color: $accent-color;
       margin-top: 1.5rem;
       margin-bottom: 3rem;
@@ -494,11 +658,28 @@ body {
       margin-top: 3rem;
       width: 110rem;
     }
+
+
+    .slider {
+      width: 100%;
+      overflow-y: scroll;
+
+      img {
+        width: 40%;
+      }
+
+      a {
+        width: 20%;
+        flex-shrink: 0;
+      }
+    }
   }
 
   // *************************************
 
   .my-comand {
+    padding: 6rem 0;
+
     h1 {
       font-size: 2.2em;
       font-weight: 400;
@@ -506,6 +687,7 @@ body {
 
     hr {
       width: 380px;
+      height: 1.3px;
       background-color: $accent-color;
       margin-top: 1.5rem;
     }
@@ -539,6 +721,7 @@ body {
   // **************************************************
   .blog {
     background-color: $accent-color-light;
+    padding: 5.5rem 0 6.5rem 0;
 
     .blog-text {
       margin-bottom: 3rem;
@@ -550,6 +733,7 @@ body {
 
       hr {
         width: 380px;
+        height: 1.3px;
         background-color: $accent-color;
         margin-top: 1.5rem;
       }
@@ -557,6 +741,14 @@ body {
 
     img {
       padding-bottom: 2rem;
+    }
+
+    a {
+      font-size: 1.15em;
+
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 
@@ -567,6 +759,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 5.5rem 0 6.5rem 0;
 
     h1 {
       font-size: 2.2em;
@@ -576,6 +769,7 @@ body {
 
     hr {
       width: 380px;
+      height: 1.3px;
       background-color: $primary-color-text;
       margin-top: 1.5rem;
     }
@@ -594,7 +788,6 @@ body {
       border: none;
       padding-left: 1.2rem;
       font-style: 0.5em;
-      margin: 0 0.35rem;
 
       &:focus {
         outline: none;
@@ -606,6 +799,7 @@ body {
       border-radius: 10px;
       padding: 1.2rem;
       margin: 1rem 0;
+      resize: none;
 
       &:focus {
         outline: none;
@@ -615,9 +809,16 @@ body {
     .icons {
       li {
         display: block;
+        margin: -0.3rem 0;
+
+        i {
+          padding: 0.6rem;
+        }
 
         span {
           color: $primary-color-text;
+          font-size: 1.15em;
+
         }
       }
 
@@ -631,6 +832,7 @@ body {
 
   footer {
     background-color: #24241f;
+    padding: 4rem 0;
 
     p {
       font-size: 0.85em;
@@ -654,6 +856,10 @@ body {
 
     img {
       vertical-align: middle;
+    }
+
+    i {
+      padding: 0.7rem;
     }
   }
 }

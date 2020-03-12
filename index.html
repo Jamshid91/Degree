@@ -14,17 +14,18 @@
   <header id="header">
     <div class="container">
       <div class="row menu justify-content-center no-gutters">
-        <div class="logo col-lg-3 col-md-4 col-sm-3 col-3  text-center"><a href="#"><img src="assets/images/logo.png"
+        <div class="logo col-lg-3 col-md-3 col-sm-3 col-3  text-center"><a href="#"><img src="assets/images/logo.png"
               alt=""></a></div>
-        <div class="col-lg-3 col-md-4 col-sm-5 col-8 ml-auto justify-content-center align-self-center">
-          <div class="phone d-flex align-self-center"><img src="assets/images/phone.png" alt="">
-            <div class="align-self-center">
-              <h4>Есть вапросы? Звоните !<p>8/800/259 09 36</p>
+        <div class="col-lg-3 col-md-4 col-sm-5 col-6 ml-auto align-self-center">
+          <div class="phone d-flex align-self-center justify-content-center">
+            <img src="assets/images/phone.png" alt="" class="align-self-center">
+            <div class="phone-text align-self-center">
+              <h4 class="align-self-center">Есть вапросы? Звоните !<p>8/800/259 09 36</p>
               </h4>
             </div>
           </div>
         </div>
-        <nav class="nav d-flex flex-column col-lg-3 col-md-3 col-sm-2 col-2 justify-content-center ml-auto">
+        <nav class="nav d-flex flex-column col-lg-1 col-md-2 col-sm-2 col-2 justify-content-end">
           <div class="menu-burger">
             <span class="menu-item"></span>
             <span class="menu-item"></span>
@@ -53,14 +54,25 @@
           <p>Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно !*</p>
         </div>
       </div>
-      <div class="row col justify-content-center text-center no-gutters">
-        <div class="contact col-md-10 col-sm-10 col-10 d-flex"><input type="text" placeholder="Ваше имя"><input
-            type="text" placeholder="E-mail"><input type="text" placeholder="Номер  телефона"></div>
-      </div>
+
       <div class="row justify-content-center text-center no-gutters">
-        <div class="temp"><button class="btn">Оставьте заявку !</button>
-          <p>*Мы гарантируем конфидициальность передаваемых данных</p><img src="assets/images/cat.png" class="cat"
-            alt="">
+        <div class="contact col-lg-10 col-md-10 col-sm-10 col-10 d-flex justify-content-center">
+          <div class="bgc-btn">
+          </div>
+          <input type="text" placeholder="Ваше имя"><input type="text" placeholder="E-mail"><input type="text"
+            placeholder="Номер  телефона">
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-3">
+          <button class="btn">Оставьте заявку !</button>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center">
+        <div class="temp">
+          <p>*Мы гарантируем конфидициальность передаваемых данных</p>
+          <img src="assets/images/cat.png" class="cat" alt="">
         </div>
       </div>
     </div>
@@ -98,8 +110,8 @@
           позволяющая обеспечить удобство людей при нахождении на территории</p>
       </div>
     </div>
-    <div class="row integer justify-content-center">
-      <div class="col-lg-5 col-md-6 col-sm-10 align-self-center">
+    <div class="row vis justify-content-center">
+      <div class="col-lg-6 col-md-6 col-sm-10 align-self-center">
         <h2>Визуализация</h2>
         <p>Услуга,
           направленная на разработку дизайна прилегающих элементов зданий,
@@ -122,34 +134,55 @@
         </div>
       </div>
       <div class="row justify-content-center no-gutters">
-        <div class="col-lg-7 col-md-7 col-sm-10">
+        <div class="col-lg-7 col-md-7 col-sm-10 justify-content-center">
           <div class="radio ">
-            <h4>Плошадь помешения:</h4><br>
+            <h4>Площадь помещения:</h4><br>
             <ul>
-              <li><span>100m<sup>2</sup></span><input type="radio" name="gander"></li>
-              <li><span>10 000m<sup>2</sup></span><input type="radio" name="gander"></li>
-              <li><span>250 000m<sup>2</sup></span><input type="radio" name="gander"></li>
-              <li><span>500 000m<sup>2</sup></span><input type="radio" name="gander"></li>
+              <li><span>100m<sup>2</sup></span></li>
+              <li><span>1 000m<sup>2</sup></span></li>
+              <li><span>2 500m<sup>2</sup></span></li>
+              <li><span>5 000m<sup>2</sup></span></li>
             </ul>
+            <div class="inputs">
+              <input type="radio" name="gander">
+              <input type="radio" name="gander">
+              <input type="radio" name="gander">
+              <input type="radio" name="gander">
+            </div>
+            <hr>
           </div>
 
           <div class="paket">
-            <h4>Виберите пакет:</h4>
-            <button>Light</button>
-            <button>Medium</button>
-            <button>Full</button>
+            <h4>Выберите пакет:</h4>
+            <button class="btn-one">Light</button>
+            <div class="btn-one-text textOne">
+              <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Знаках толку
+                снова, взобравшись сих страна рукописи.</p>
+            </div>
+
+            <button class="btn-two">Medium</button>
+            <div class="btn-two-text textTwo">
+              <p>План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по
+                стенам, план электросетей)</p>
+            </div>
+
+            <button class="btn-three">Full</button>
+            <div class="btn-three-text textThree">
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Однажды снова
+                знаках буквоград алфавит? Одна курсивных семь безопасную?</p>
+            </div>
           </div>
         </div>
 
-        <div class="check col-lg-4 col-md-5 col-sm-10  text-center">
-          <p>Плошадь помешения</p>
+        <div class="check col-lg-5 col-md-5 col-sm-10 d-flex flex-column text-center justify-content-center">
+          <strong>Площадь помещения:</strong>
           <span>1 000м<sup>2</sup></span>
-          <p>Средная стоимость м<sup>2</sup></p>
+          <strong>Средняя стоимость м<sup>2</sup>:</strong>
           <span>4 850 тг</span>
-          <p>Средная стоимость объекта м<sup>2</sup></p>
+          <strong>Средная стоимость объекта м<sup>2</sup>:</strong>
           <span>48 500 тг</span>
           <button class="btn">получит консультацию специалиста</button>
-          <h5>или позвоните нам по телефону</h5>
+          <h5>или позвоните нам по телефону :</h5>
           <h4>+ 7 727 388 71 77</h4>
         </div>
       </div>
@@ -172,7 +205,7 @@
 
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row imges justify-content-center">
       <div class="col-lg-4 col-md-4"><img src="assets/images/port1.png" alt="" class="w-100"></div>
       <div class="col-lg-4 col-md-4"><img src="assets/images/port2.png" alt="" class="w-100"></div>
       <div class="col-lg-4 col-md-4"><img src="assets/images/port3.png" alt="" class="w-100"></div>
@@ -235,19 +268,19 @@
   <div class="container prosess" id="process">
     <div class="row justify-content-center text-center">
       <div class="prosess-text">
-        <h1>Процесс взаимодецства</h1>
+        <h1>Процесс взаимодействия</h1>
         <hr>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-lg-6 col-md-6 col-10"><img src="assets/images/pross1.png" alt="" class="w-100"></div>
       <div class="col-lg-6 col-md-6 col-10 align-self-center">
-        <p>Заролнения буфера</p>
+        <p>Заролнения брифа</p>
       </div>
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-lg-6 col-md-6 col-10 align-self-center">
-        <p>Исслодования</p>
+        <p>Исследование</p>
       </div>
       <div class="col-lg-6 col-md-6 col-10"><img src="assets/images/pross2.png" alt="" class="w-100"></div>
     </div>
@@ -259,7 +292,7 @@
     </div>
     <div class="row justify-content-center text-center">
       <div class="col-lg-6 col-md-6 col-10 align-self-center">
-        <p>Завершения</p>
+        <p>Завершение</p>
       </div>
       <div class="col-lg-6 col-md-6 col-10"><img src="assets/images/pross4.png" alt="" class="w-100"></div>
     </div>
@@ -276,17 +309,79 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-12 d-flex justify-content-between">
-          <a href=""><img src="assets/images/comp1.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp2.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp3.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp4.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp5.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp6.png" alt="" class="w-100"></a>
-          <a href=""><img src="assets/images/comp7.png" alt="" class="w-100"></a>
-        </div>
-        <div class="row">
-          <div class="col-12 justify-content-center">
-            <input type="range" value="0" min="0" max="100" class="w-100">
+          <div class="slider d-flex">
+            <a href=""><img src="assets/images/comp1.png" alt=""></a>
+            <a href=""><img src="assets/images/comp2.png" alt=""></a>
+            <a href=""><img src="assets/images/comp3.png" alt=""></a>
+            <a href=""><img src="assets/images/comp4.png" alt=""></a>
+            <!-- <a href=""><img src="assets/images/comp5.png" alt=""></a> -->
+            <a href=""><img src="assets/images/comp6.png" alt=""></a>
+            <a href=""><img src="assets/images/comp7.png" alt=""></a>
+            <a href=""><img src="assets/images/comp8.png" alt=""></a>
+            <a href=""><img src="assets/images/comp9.png" alt=""></a>
+            <a href=""><img src="assets/images/comp10.png" alt=""></a>
+            <a href=""><img src="assets/images/comp11.png" alt=""></a>
+            <a href=""><img src="assets/images/comp12.png" alt=""></a>
+            <a href=""><img src="assets/images/comp13.png" alt=""></a>
+            <a href=""><img src="assets/images/comp14.png" alt=""></a>
+            <a href=""><img src="assets/images/comp15.png" alt=""></a>
+            <a href=""><img src="assets/images/comp16.png" alt=""></a>
+            <a href=""><img src="assets/images/comp17.png" alt=""></a>
+            <a href=""><img src="assets/images/comp18.png" alt=""></a>
+            <a href=""><img src="assets/images/comp19.png" alt=""></a>
+            <a href=""><img src="assets/images/comp20.png" alt=""></a>
+            <a href=""><img src="assets/images/comp21.png" alt=""></a>
+            <a href=""><img src="assets/images/comp22.png" alt=""></a>
+            <a href=""><img src="assets/images/comp23.png" alt=""></a>
+            <a href=""><img src="assets/images/comp24.png" alt=""></a>
+            <a href=""><img src="assets/images/comp25.png" alt=""></a>
+            <a href=""><img src="assets/images/comp26.png" alt=""></a>
+            <a href=""><img src="assets/images/comp27.png" alt=""></a>
+            <a href=""><img src="assets/images/comp28.png" alt=""></a>
+            <a href=""><img src="assets/images/comp29.png" alt=""></a>
+            <a href=""><img src="assets/images/comp30.png" alt=""></a>
+            <a href=""><img src="assets/images/comp31.png" alt=""></a>
+            <a href=""><img src="assets/images/comp32.png" alt=""></a>
+            <a href=""><img src="assets/images/comp33.png" alt=""></a>
+            <a href=""><img src="assets/images/comp34.png" alt=""></a>
+            <a href=""><img src="assets/images/comp35.png" alt=""></a>
+            <a href=""><img src="assets/images/comp1.png" alt=""></a>
+            <a href=""><img src="assets/images/comp2.png" alt=""></a>
+            <a href=""><img src="assets/images/comp3.png" alt=""></a>
+            <a href=""><img src="assets/images/comp4.png" alt=""></a>
+            <a href=""><img src="assets/images/comp5.png" alt=""></a>
+            <a href=""><img src="assets/images/comp6.png" alt=""></a>
+            <a href=""><img src="assets/images/comp7.png" alt=""></a>
+            <a href=""><img src="assets/images/comp8.png" alt=""></a>
+            <a href=""><img src="assets/images/comp9.png" alt=""></a>
+            <a href=""><img src="assets/images/comp10.png" alt=""></a>
+            <a href=""><img src="assets/images/comp11.png" alt=""></a>
+            <a href=""><img src="assets/images/comp12.png" alt=""></a>
+            <a href=""><img src="assets/images/comp13.png" alt=""></a>
+            <a href=""><img src="assets/images/comp14.png" alt=""></a>
+            <a href=""><img src="assets/images/comp15.png" alt=""></a>
+            <a href=""><img src="assets/images/comp16.png" alt=""></a>
+            <a href=""><img src="assets/images/comp17.png" alt=""></a>
+            <a href=""><img src="assets/images/comp18.png" alt=""></a>
+            <a href=""><img src="assets/images/comp19.png" alt=""></a>
+            <a href=""><img src="assets/images/comp20.png" alt=""></a>
+            <a href=""><img src="assets/images/comp21.png" alt=""></a>
+            <a href=""><img src="assets/images/comp22.png" alt=""></a>
+            <a href=""><img src="assets/images/comp23.png" alt=""></a>
+            <a href=""><img src="assets/images/comp24.png" alt=""></a>
+            <a href=""><img src="assets/images/comp25.png" alt=""></a>
+            <a href=""><img src="assets/images/comp26.png" alt=""></a>
+            <a href=""><img src="assets/images/comp27.png" alt=""></a>
+            <a href=""><img src="assets/images/comp28.png" alt=""></a>
+            <a href=""><img src="assets/images/comp29.png" alt=""></a>
+            <a href=""><img src="assets/images/comp30.png" alt=""></a>
+            <a href=""><img src="assets/images/comp31.png" alt=""></a>
+            <a href=""><img src="assets/images/comp32.png" alt=""></a>
+            <a href=""><img src="assets/images/comp33.png" alt=""></a>
+            <a href=""><img src="assets/images/comp34.png" alt=""></a>
+            <a href=""><img src="assets/images/comp35.png" alt=""></a>
+
+
           </div>
         </div>
       </div>
@@ -396,13 +491,13 @@
           <button class="btn text-center justify-content-center">Оставьте заявку!</button>
         </div>
 
-        <div class="icons col-lg-3 col-md-4 col-10 d-flex flex-column justify-content-center no-gutters">
+        <div class="icons col-lg-3 col-md-4 col-10 d-flex flex-column">
           <li><i class="fa fa-phone"></i><span>+ 7 896 876 66 77</span></li>
           <li><i class="fa fa-whatsapp" aria-hidden="true"></i><span>+ 7 896 876 66 77</span></li>
           <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>sales@23degree.kz</span></li>
           <li><i class="fa fa-skype" aria-hidden="true"></i><span>skype: 23degree</span></li>
           <li><i class="fa fa-telegram" aria-hidden="true"></i><span>telegram: 23degree</span></li>
-          <p>График работы: с 9-00 до 18-00. Пн.-Пт.</p>
+          <p>График работы:с 9-00 до 18-00.Пн.-Пт.</p>
         </div>
       </div>
 
@@ -412,8 +507,9 @@
 
   <section class="map w-100">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46496.65619876378!2d76.86104333838215!3d43.25056225891149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ee57cd8020d%3A0xab48467a945d77b6!2z0JDQsdCw0Lk!5e0!3m2!1sru!2s!4v1583462444238!5m2!1sru!2s"
-      width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4650.527450455566!2d76.9469489986366!3d43.2423219762339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ee57cd8020d%3A0xab48467a945d77b6!2z0JDQsdCw0Lk!5e0!3m2!1sru!2s!4v1583856337492!5m2!1sru!2s"
+      width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
   </section>
   <!-- ******************************************************* -->
 
@@ -467,6 +563,8 @@
   <script src="assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/menuBurger.js"></script>
+  <script src="assets/js/carusel.js"></script>
+
 </body>
 
 </html>
