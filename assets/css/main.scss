@@ -110,6 +110,7 @@ body {
       }
 
       .nav {
+
         .menu-burger {
           span {
             display: block;
@@ -137,33 +138,38 @@ body {
         }
 
         .hidden {
-          position: absolute;
           display: none;
 
         }
 
         ul {
-          box-shadow: 0 0 3px $accent-color;
           position: absolute;
-          left: -6rem;
+          left: -11rem;
           width: 22rem;
           height: 27rem;
 
           li {
             display: block;
+            width: 20rem;
+            box-shadow: 0 0 10px $accent-color;
+            border: 1px solid $primary-color-text;
+            background-color: $accent-color;
             font-size: 1.2em;
-            box-shadow: 0 0 3px solid $primary-color-text;
+            padding: 0.1rem;
+            padding-left: 1rem;
+            margin: 0.2rem 0;
 
+            &:hover {
+              background-color: #0006;
+              border: 1px solid $accent-color;
+              font-size: 1.3em;
+
+            }
 
             a {
+
               color: $primary-color-text;
               text-decoration: none;
-
-              &:hover {
-                color: $accent-color;
-
-              }
-
             }
           }
         }
@@ -258,6 +264,8 @@ body {
   // *************************************************************
 
   .design {
+    padding: 7rem 0;
+
     img {
       transition: 0.5s;
 
@@ -267,7 +275,6 @@ body {
     }
 
     .my {
-      padding-top: 6.5rem;
 
       h1 {
         font-size: 2.25em;
@@ -283,36 +290,13 @@ body {
       }
     }
 
-    .integer,
-    .extra,
-    .vis {
-      h2 {
-        color: $accent-color;
-        font-size: 1.75em;
-      }
-
-      p {
-        font-size: 1.15em;
-      }
-
-      button {
-        margin-top: 3rem;
-        font-size: 0.85em;
-        margin-top: 3rem;
-        width: 18.5rem;
-        height: 5.5rem;
-      }
-
-
+    .revese {
+      display: flex;
+      flex-direction: row-reverse;
     }
 
     .extra {
-      margin: 2rem 0;
-    }
-
-    .vis {
-      margin-top: 2rem;
-      margin-bottom: 7.5rem;
+      padding: 2rem 0;
     }
   }
 
@@ -348,71 +332,107 @@ body {
     }
 
     .radio {
-      box-shadow: 0 0 4px #fff;
+      width: 100%;
+      color: $primary-color-text;
+      border: 2px solid $primary-color-text;
       position: relative;
+      padding: 2rem 0;
 
-      ul {
+      .box-text {
         display: flex;
-        justify-content: space-between;
-        text-align: center;
-        margin-left: -4rem;
-        margin-top: -4rem;
-      }
+        margin-top: -1rem;
 
-      li {
-        list-style-type: none;
-        padding: 2rem;
+        .box-1 {
+          padding-left: 2rem;
+        }
 
-      }
+        .box-2 {
+          padding-left: 7rem;
+        }
 
-      span {
-        color: $primary-color-text;
-        font-weight: 200;
-        // font-size: 2rem;
-      }
+        .box-3 {
+          padding-left: 12rem;
+        }
 
-      h4 {
-        color: $primary-color-text;
-        font-weight: 400;
-        font-size: 1.25em;
-        padding: 1rem 0 0 1rem;
-      }
-
-      .inputs {
-        display: flex;
-        justify-content: space-between;
-        margin: 3rem;
-        margin-top: -2rem;
-
-        input {
-          width: 2rem;
-          height: 2rem;
-          margin-bottom: 2.5rem;
+        .box-4 {
+          padding-left: 20rem;
         }
       }
 
-      hr {
+      span {
+        font-weight: 200;
+      }
+
+      h4 {
+        font-weight: 400;
+        font-size: 1.25em;
+        padding-left: 2rem;
+      }
+
+      .box-circles {
+        display: flex;
+
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+        }
+
+        .box_1 {
+          margin-left: 2rem;
+        }
+
+        .box_2 {
+          margin-left: 9.65rem;
+        }
+
+        .box_3 {
+          margin-left: 15.8rem;
+        }
+
+        .box_4 {
+          margin-left: 27.3rem;
+        }
+      }
+
+      input[type="range"] {
         position: absolute;
-        width: 58rem;
+        width: 61rem;
         height: 1rem;
         background-color: #fff6;
         border-radius: 10px;
-        top: 8rem;
-        left: 3.2rem;
-        margin: 0 auto;
+        top: 9rem;
+        left: 1.9rem;
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer;
+      }
+
+      .calc-house::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        outline: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $primary-color-text;
+        border-radius: 50%;
+        border: 0.9rem solid $accent-color
       }
     }
 
     .paket {
-      box-shadow: 0 0 4px #fff;
+      width: 100%;
+      border: 2px solid $primary-color-text;
+      border-radius: 5px;
       position: relative;
+      margin-top: 1rem;
 
       h4 {
         color: $primary-color-text;
         font-weight: 400;
         font-size: 1.25em;
-        padding: 1rem 0 1rem 1rem;
-        margin-top: -2rem;
+        padding: 2rem;
       }
 
       button {
@@ -449,7 +469,7 @@ body {
         font-size: 0.85em;
         text-align: center;
         position: absolute;
-        top: 8rem;
+        top: 10rem;
         left: 10rem;
         border-radius: 1rem;
       }
@@ -470,6 +490,23 @@ body {
     .check {
       padding-bottom: 6.5rem;
 
+      .area {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        p {
+          padding-left: 0.5rem;
+          font-size: 2.3em;
+          color: $primary-color-text;
+
+          sup {
+            font-size: 0.6em;
+          }
+        }
+      }
+
       strong {
         color: $primary-color-text;
         font-weight: 100;
@@ -481,11 +518,10 @@ body {
       }
 
       .btn {
-        width: 31rem;
-        height: 5rem;
+        width: 100%;
         border-radius: 5rem;
         font-size: 0.9em;
-        margin: 2rem auto;
+        margin: 2rem;
       }
 
       h4 {
@@ -602,10 +638,10 @@ body {
   }
 
   // **************************
-  .prosess {
+  .process {
     padding: 7rem 0;
 
-    .prosess-text {
+    .process-text {
       margin-bottom: 4rem;
     }
 
@@ -782,8 +818,8 @@ body {
     }
 
     input {
-      width: 240px;
-      height: 50px;
+      width: 24rem;
+      height: 5rem;
       border-radius: 10px;
       border: none;
       padding-left: 1.2rem;
@@ -852,10 +888,6 @@ body {
 
     hr {
       background-color: #50504c;
-    }
-
-    img {
-      vertical-align: middle;
     }
 
     i {

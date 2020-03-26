@@ -1,0 +1,153 @@
+:root {
+  font-size: 16px;
+}
+
+
+.page {
+  font-size: 1em;
+  margin-top: 25px;
+}
+header {
+  background-image: url(../imegs/A-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.nav-item {
+  padding: 20px;
+  padding-right: 50px;
+  font-style: 14px;
+  font-weight: 500;
+  color: black;
+  list-style: none;
+}
+.d-flex {
+  display: flex;
+  justify-content: right;
+}
+.menu-text:hover {
+  color: black;
+  font-style: 14px;
+  font-weight: 500;
+}
+.menu-text:focus {
+  outline: none;
+}
+.menu-burger {
+  display: flex;
+  flex-flow: column;
+}
+.burger-item {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+  margin: 2px;
+}
+.sub-menu {
+  display: block;
+  float: right;
+  width: 150px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.sub-menu ul {
+  padding: 20px;
+}
+.menu-list {
+  list-style: none;
+  padding: 5px;
+}
+a {
+color: #000;
+font-size: 15px;
+font-weight: 600;
+text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.hidden {
+ display: none;
+}
+.header-text {
+  margin-top: 120px;
+}
+.header-text p {
+  font-size: 2.2em;
+  font-weight: 100;
+}
+p strong {
+  font-weight: 900;
+}
+.header-text-sub {
+  display: block;
+  margin-top: 10px;
+}
+/* *******************  END HEADER  ********** */
+
+aside {
+  background-image: url(../imegs/P-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: block;
+  position: relative;
+}
+.aside-flex {
+  display: flex;
+}
+.camera {
+  display: block;
+  background-image: url(../imegs/Warstwa\ 2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 490px;
+  margin: 90px 40px;
+}
+.aside-text {
+  margin-top: 100px;
+}
+h1 {
+  display: flex;
+  padding: 10px;
+  font-size: 42px;
+}
+h1 span {
+  font-size: 42px;
+  font-weight: 100;
+}
+hr {
+  width: 60px;
+  height: 1px;
+  background-color: #000;
+}
+.main-icons {
+  display: block;
+  margin-top: -250px;
+  margin-left: 500px;
+
+}
+.fa {
+  width: 35px;
+  height: 30px;
+  background-color: #909090;
+  color: #fff;
+  padding: 8px;
+  margin: 5px;
+}
+.fa:hover {
+  background-color: #000;
+}
+
+@media screen and (min-width:375px) and (max-width: 500px) {
+  .page {
+    font-size: 0.5em;
+  }
+
+  .header-text {
+    margin-top: 0;
+  }
+}

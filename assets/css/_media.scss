@@ -2,15 +2,122 @@
 @media screen and (max-width: 1200px) {
   body {
     header {
+      position: relative;
+
       .bgc-btn {
         display: none;
+      }
+
+      .menu {
+
+        ul {
+          position: absolute;
+          left: -12rem;
+          height: 50rem;
+        }
       }
     }
 
     main {
+      position: relative;
+
       .radio {
-        hr {
-          width: 48rem;
+        width: 100%;
+        padding-bottom: 3.5rem;
+
+        input[type="range"] {
+          position: absolute;
+          width: 50rem;
+          top: 9.2rem;
+        }
+
+        .box-text {
+          display: flex;
+          margin-top: -1rem;
+
+
+          .box-1 {
+            padding-left: 2rem;
+          }
+
+          .box-2 {
+            padding-left: 5rem;
+          }
+
+          .box-3 {
+            padding-left: 10rem;
+          }
+
+          .box-4 {
+            padding-left: 15rem;
+          }
+        }
+
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+          margin-bottom: 2.5rem;
+        }
+
+        .box_1 {
+          left: 0;
+        }
+
+        .box_2 {
+          left: 2rem;
+        }
+
+        .box_3 {
+          left: 10.3rem;
+        }
+
+        .box_4 {
+          left: 22.5rem;
+        }
+      }
+
+      .paket {
+        width: 100%;
+
+        button {
+          // width: 100%;
+          width: 16rem;
+        }
+
+
+        div {
+          margin-top: 2rem;
+        }
+
+        .textOne,
+        .textTwo,
+        .textThree {
+          position: absolute;
+          left: 7rem;
+          width: 40rem;
+          height: 13rem;
+          top: 8rem;
+        }
+
+        .textThree {
+          left: 14rem;
+        }
+
+        .textOne {
+          left: 0;
+        }
+
+      }
+    }
+
+    .quation {
+      .inputs {
+        input {
+          width: 20rem;
         }
       }
     }
@@ -31,13 +138,10 @@
       }
 
       nav {
-        .hidden {
 
-          ul {
-            position: absolute;
-            right: -10rem;
-
-          }
+        ul {
+          position: absolute;
+          left: 5rem;
         }
       }
 
@@ -53,48 +157,107 @@
     }
 
     main {
+      position: relative;
+
       .radio {
-        ul {
-          li {
-            margin-right: 0.2rem;
+        width: 100%;
+        padding-bottom: 3.5rem;
 
-            span {
-              font-size: 1em;
-            }
+        input[type="range"] {
+          position: absolute;
+          width: 41rem;
+        }
 
-            input[type="radio"] {
-              width: 2rem;
-              height: 2rem;
-              margin-left: 1.1rem;
-            }
+        .box-text {
+          display: flex;
+          margin-top: -1rem;
+
+
+          .box-1 {
+            padding-left: 2rem;
+          }
+
+          .box-2 {
+            padding-left: 4rem;
+          }
+
+          .box-3 {
+            padding-left: 7rem;
+          }
+
+          .box-4 {
+            padding-left: 11rem;
           }
         }
 
-        hr {
-          width: 33rem;
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+          margin-bottom: 2.5rem;
+        }
+
+        .box_1 {
+          left: 0;
+        }
+
+        .box_2 {
+          left: 0.3rem;
+        }
+
+        .box_3 {
+          left: 6rem;
+        }
+
+        .box_4 {
+          left: 14.5rem;
         }
       }
 
       .paket {
-        padding-bottom: 1rem;
+        width: 100%;
+        padding: 1rem 4rem;
 
         button {
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-content: center;
-          // flex-direction: column;
-          margin: 1rem auto;
-          width: 80%;
+          width: 100%;
         }
+
+        div {
+          margin-top: 2rem;
+        }
+
+        .textOne,
+        .textTwo,
+        .textThree {
+          position: absolute;
+          left: 5.1rem;
+          top: 9.5rem;
+          width: 38rem;
+          height: 13rem;
+          clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+        }
+
+        .textThree {
+          top: 23rem;
+        }
+
+        .textTwo {
+          top: 16rem;
+        }
+
       }
 
-      .check {
-        .btn {
-          width: 90%;
-        }
+      .btn {
+        // width: 10rem;
+        // height: 5rem;
+        // padding: 0;
       }
     }
+
+
 
     .portfel {
       .buttons {
@@ -110,7 +273,7 @@
 
     .quation {
       input {
-        width: 46.5rem;
+        width: 100%;
         height: 5rem;
         margin-top: 1rem;
       }
@@ -130,16 +293,79 @@
 @media screen and (max-width: 768px) {
   body {
     header {
-      .logo {
-        padding-left: 3rem;
-      }
 
       .phone {
         display: flex;
         justify-content: end;
         padding-left: 4rem;
-
       }
+
+      .menu {
+        display: flex;
+
+        .logo_l {
+          width: 100%;
+
+        }
+
+        .phone {
+
+          h4 {
+            font-size: 0.6em;
+          }
+        }
+
+        .nav {
+          margin-top: 1rem;
+          justify-content: center;
+          margin-left: auto;
+
+          ul {
+            box-shadow: none;
+            background: none;
+            position: relative;
+            left: -35rem;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              text-align: center;
+              font-size: 1.2em;
+              box-shadow: 0 0 6px $accent-color;
+              width: 30rem;
+              height: 5rem;
+              border: 2px solid $primary-color-text;
+              border-radius: 5px;
+              margin-top: 0.5rem;
+
+
+              a {
+                color: $primary-color-text;
+                text-decoration: none;
+
+                &:hover {
+                  color: $accent-color;
+
+                }
+
+              }
+            }
+          }
+        }
+
+        .logo {
+          width: 100px;
+          height: 50px;
+        }
+
+        p {
+          font-size: 1em;
+        }
+      }
+
+
+
+
 
       .contact {
         display: flex;
@@ -150,12 +376,20 @@
           width: 100%;
         }
       }
+
+      .cat {
+        display: none;
+      }
+
+      .temp {
+        margin-bottom: 3rem;
+      }
     }
 
     .design {
-      // img {
-      //   width: 100%;
-      // }
+      img {
+        margin-bottom: 2rem;
+      }
 
       h2 {
         text-align: center;
@@ -167,45 +401,99 @@
       }
     }
 
+
     main {
-      span {
-        font-size: 1.5em;
-      }
+      position: relative;
 
       .radio {
+        width: 100%;
+        padding-bottom: 3.5rem;
 
-        span {
-          font-size: 1em;
+        input[type="range"] {
+          position: absolute;
+          width: 45.5rem;
         }
 
-        input[type="radio"] {
-          width: 2.5rem;
-          height: 2.5rem;
+        .box-text {
+          display: flex;
+          margin-top: -1rem;
+
+
+          .box-1 {
+            padding-left: 2rem;
+          }
+
+          .box-2 {
+            padding-left: 4rem;
+          }
+
+          .box-3 {
+            padding-left: 7rem;
+          }
+
+          .box-4 {
+            padding-left: 15.5rem;
+          }
         }
 
-        hr {
-          display: none;
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+          margin-bottom: 2.5rem;
+        }
+
+        .box_1 {
+          left: 0;
+        }
+
+        .box_2 {
+          left: 1.5rem;
+        }
+
+        .box_3 {
+          left: 8.7rem;
+        }
+
+        .box_4 {
+          left: 19rem;
         }
       }
 
       .paket {
-        padding-bottom: 1rem;
-        margin-bottom: 2rem;
-      }
+        width: 100%;
+        padding: 1rem 4rem;
 
-      .check {
-        .btn {
-          width: 90%;
-          font-size: 1.2em;
+        button {
+          width: 100%;
         }
 
-        span {
-          font-size: 1.5em;
+        div {
+          margin-top: 2rem;
         }
 
-        p {
-          font-size: 1.5em;
+        .textOne,
+        .textTwo,
+        .textThree {
+          position: absolute;
+          left: 5.1rem;
+          top: 9.5rem;
+          width: 38rem;
+          height: 13rem;
+          clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
         }
+
+        .textThree {
+          top: 23rem;
+        }
+
+        .textTwo {
+          top: 16rem;
+        }
+
       }
     }
 
@@ -255,23 +543,56 @@
 
     header {
       .menu {
+        display: flex;
+
+        .logo_l {
+          width: 100%;
+
+        }
+
         .phone {
-          margin-top: 3rem;
 
           h4 {
-            font-size: 0.8em;
-          }
-
-          p {
-            // font-size: 2.5em;
+            font-size: 0.6em;
           }
         }
 
         .nav {
           margin-top: 1rem;
-          display: flex;
-          justify-content: end;
+          justify-content: center;
           margin-left: auto;
+
+          ul {
+            box-shadow: none;
+            background: none;
+            position: relative;
+            left: -30rem;
+            display: flex;
+            flex-direction: column;
+
+            li {
+              text-align: center;
+              font-size: 1.2em;
+              box-shadow: 0 0 6px $accent-color;
+              width: 30rem;
+              // height: 5rem;
+              border: 2px solid $primary-color-text;
+              border-radius: 5px;
+              margin-top: 0.1rem;
+
+
+              a {
+                color: $primary-color-text;
+                text-decoration: none;
+
+                &:hover {
+                  color: $accent-color;
+
+                }
+
+              }
+            }
+          }
         }
 
         .logo {
@@ -310,35 +631,107 @@
     }
 
     main {
-      .row {
-        margin: 0 3rem;
-      }
-
-      h1 {
-        padding-bottom: 2rem;
-      }
-
       hr {
         display: none;
       }
 
+      position: relative;
+
       .radio {
-        ul {
-          // display: flex;
-          // flex-direction: column;
+        width: 100%;
+        padding-bottom: 3.5rem;
 
-          li {
-            // display: flex;
-            // justify-content: space-between;
-            font-size: 0.7em;
+        input[type="range"] {
+          position: absolute;
+          width: 30rem;
+          top: 10rem;
+          left: 1.5rem;
+        }
 
-            input[type="radio"] {
-              margin-top: 1.3rem;
-              width: 3rem;
-              height: 3rem;
-            }
+        .box-text {
+          display: flex;
+          margin-top: -1rem;
+
+
+          .box-1 {
+            padding-left: 1rem;
+          }
+
+          .box-2 {
+            padding-left: 1.5rem;
+          }
+
+          .box-3 {
+            padding-left: 2rem;
+          }
+
+          .box-4 {
+            padding-left: 6rem;
           }
         }
+
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+          margin-bottom: 2.5rem;
+        }
+
+        .box_1 {
+          left: -0.4rem;
+        }
+
+        .box_2 {
+          left: -2.5rem;
+        }
+
+        .box_3 {
+          left: -0.4rem;
+        }
+
+        .box_4 {
+          left: 2rem;
+        }
+      }
+
+      .paket {
+        width: 100%;
+        padding: 0;
+
+        button {
+          width: 90%;
+        }
+
+        div {
+          margin-top: 2rem;
+        }
+
+        .textOne,
+        .textTwo,
+        .textThree {
+          position: absolute;
+          left: 0;
+          top: 8.5rem;
+          width: 34rem;
+          height: 15rem;
+          clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+        }
+
+        .textThree {
+          top: 23rem;
+        }
+
+        .textTwo {
+          top: 16rem;
+        }
+
+      }
+
+      .check {
+        margin-top: 2rem;
       }
     }
 
@@ -385,13 +778,19 @@
       }
     }
 
-    .prosess {
+    .process {
+      .process-text {
+        margin-top: 3rem;
+      }
+
       hr {
         display: none;
       }
 
       p {
         font-size: 1.5em;
+        font-weight: 700;
+        padding: 2rem 0;
       }
     }
 

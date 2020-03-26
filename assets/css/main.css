@@ -86,25 +86,30 @@ body {
         body header .menu .nav p:hover {
           color: #19b5fe; }
       body header .menu .nav .hidden {
-        position: absolute;
         display: none; }
       body header .menu .nav ul {
-        -webkit-box-shadow: 0 0 3px #19b5fe;
-                box-shadow: 0 0 3px #19b5fe;
         position: absolute;
-        left: -6rem;
+        left: -11rem;
         width: 22rem;
         height: 27rem; }
         body header .menu .nav ul li {
           display: block;
+          width: 20rem;
+          -webkit-box-shadow: 0 0 10px #19b5fe;
+                  box-shadow: 0 0 10px #19b5fe;
+          border: 1px solid #FFFFFF;
+          background-color: #19b5fe;
           font-size: 1.2em;
-          -webkit-box-shadow: 0 0 3px solid #FFFFFF;
-                  box-shadow: 0 0 3px solid #FFFFFF; }
+          padding: 0.1rem;
+          padding-left: 1rem;
+          margin: 0.2rem 0; }
+          body header .menu .nav ul li:hover {
+            background-color: #0006;
+            border: 1px solid #19b5fe;
+            font-size: 1.3em; }
           body header .menu .nav ul li a {
             color: #FFFFFF;
             text-decoration: none; }
-            body header .menu .nav ul li a:hover {
-              color: #19b5fe; }
     body header .bgc-btn {
       position: absolute;
       left: -12px;
@@ -163,14 +168,14 @@ body {
   100% {
     -webkit-transform: scaleY(1.3);
             transform: scaleY(1.3); } }
-  body .design img {
-    -webkit-transition: 0.5s;
-    transition: 0.5s; }
-    body .design img:hover {
-      -webkit-transform: scale(1.03);
-              transform: scale(1.03); }
-  body .design .my {
-    padding-top: 6.5rem; }
+  body .design {
+    padding: 7rem 0; }
+    body .design img {
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      body .design img:hover {
+        -webkit-transform: scale(1.03);
+                transform: scale(1.03); }
     body .design .my h1 {
       font-size: 2.25em;
       font-weight: 400; }
@@ -180,28 +185,16 @@ body {
       background-color: #19b5fe;
       margin-top: 1.5rem;
       margin-bottom: 3.5rem; }
-  body .design .integer h2,
-  body .design .extra h2,
-  body .design .vis h2 {
-    color: #19b5fe;
-    font-size: 1.75em; }
-  body .design .integer p,
-  body .design .extra p,
-  body .design .vis p {
-    font-size: 1.15em; }
-  body .design .integer button,
-  body .design .extra button,
-  body .design .vis button {
-    margin-top: 3rem;
-    font-size: 0.85em;
-    margin-top: 3rem;
-    width: 18.5rem;
-    height: 5.5rem; }
-  body .design .extra {
-    margin: 2rem 0; }
-  body .design .vis {
-    margin-top: 2rem;
-    margin-bottom: 7.5rem; }
+    body .design .revese {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    body .design .extra {
+      padding: 2rem 0; }
   body main {
     background-image: url(../images/changeHouse.png);
     background-size: cover;
@@ -223,62 +216,78 @@ body {
       font-size: 1.63em;
       padding-bottom: 4rem; }
     body main .radio {
-      -webkit-box-shadow: 0 0 4px #fff;
-              box-shadow: 0 0 4px #fff;
-      position: relative; }
-      body main .radio ul {
+      width: 100%;
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      position: relative;
+      padding: 2rem 0; }
+      body main .radio .box-text {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        text-align: center;
-        margin-left: -4rem;
-        margin-top: -4rem; }
-      body main .radio li {
-        list-style-type: none;
-        padding: 2rem; }
+        margin-top: -1rem; }
+        body main .radio .box-text .box-1 {
+          padding-left: 2rem; }
+        body main .radio .box-text .box-2 {
+          padding-left: 7rem; }
+        body main .radio .box-text .box-3 {
+          padding-left: 12rem; }
+        body main .radio .box-text .box-4 {
+          padding-left: 20rem; }
       body main .radio span {
-        color: #FFFFFF;
         font-weight: 200; }
       body main .radio h4 {
-        color: #FFFFFF;
         font-weight: 400;
         font-size: 1.25em;
-        padding: 1rem 0 0 1rem; }
-      body main .radio .inputs {
+        padding-left: 2rem; }
+      body main .radio .box-circles {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin: 3rem;
-        margin-top: -2rem; }
-        body main .radio .inputs input {
+        display: flex; }
+        body main .radio .box-circles .circle {
           width: 2rem;
           height: 2rem;
-          margin-bottom: 2.5rem; }
-      body main .radio hr {
+          margin-bottom: 2.5rem;
+          background-color: #FFFFFF;
+          border-radius: 50%; }
+        body main .radio .box-circles .box_1 {
+          margin-left: 2rem; }
+        body main .radio .box-circles .box_2 {
+          margin-left: 9.65rem; }
+        body main .radio .box-circles .box_3 {
+          margin-left: 15.8rem; }
+        body main .radio .box-circles .box_4 {
+          margin-left: 27.3rem; }
+      body main .radio input[type="range"] {
         position: absolute;
-        width: 58rem;
+        width: 61rem;
         height: 1rem;
         background-color: #fff6;
         border-radius: 10px;
-        top: 8rem;
-        left: 3.2rem;
-        margin: 0 auto; }
+        top: 9rem;
+        left: 1.9rem;
+        outline: none;
+        -webkit-appearance: none;
+        cursor: pointer; }
+      body main .radio .calc-house::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        outline: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        border: 0.9rem solid #19b5fe; }
     body main .paket {
-      -webkit-box-shadow: 0 0 4px #fff;
-              box-shadow: 0 0 4px #fff;
-      position: relative; }
+      width: 100%;
+      border: 2px solid #FFFFFF;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 1rem; }
       body main .paket h4 {
         color: #FFFFFF;
         font-weight: 400;
         font-size: 1.25em;
-        padding: 1rem 0 1rem 1rem;
-        margin-top: -2rem; }
+        padding: 2rem; }
       body main .paket button {
         width: 19.5rem;
         height: 4.5rem;
@@ -310,7 +319,7 @@ body {
         font-size: 0.85em;
         text-align: center;
         position: absolute;
-        top: 8rem;
+        top: 10rem;
         left: 10rem;
         border-radius: 1rem; }
       body main .paket .btn-one-text {
@@ -323,6 +332,24 @@ body {
                 clip-path: polygon(75% 0, 81% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 69% 20%); }
     body main .check {
       padding-bottom: 6.5rem; }
+      body main .check .area {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        body main .check .area p {
+          padding-left: 0.5rem;
+          font-size: 2.3em;
+          color: #FFFFFF; }
+          body main .check .area p sup {
+            font-size: 0.6em; }
       body main .check strong {
         color: #FFFFFF;
         font-weight: 100; }
@@ -330,11 +357,10 @@ body {
         color: #FFFFFF;
         font-size: 2em; }
       body main .check .btn {
-        width: 31rem;
-        height: 5rem;
+        width: 100%;
         border-radius: 5rem;
         font-size: 0.9em;
-        margin: 2rem auto; }
+        margin: 2rem; }
       body main .check h4 {
         color: #FFFFFF; }
       body main .check h5 {
@@ -405,26 +431,26 @@ body {
       margin-top: 5rem; }
     body aside p {
       font-size: 0.8em; }
-  body .prosess {
+  body .process {
     padding: 7rem 0; }
-    body .prosess .prosess-text {
+    body .process .process-text {
       margin-bottom: 4rem; }
-    body .prosess h1 {
+    body .process h1 {
       font-size: 2.2em;
       font-weight: 400; }
-    body .prosess hr {
+    body .process hr {
       width: 380px;
       height: 1.3px;
       background-color: #19b5fe;
       margin-top: 1.55rem; }
-    body .prosess p {
+    body .process p {
       font-size: 2em;
       -webkit-columns: #464646;
               columns: #464646; }
-    body .prosess img {
+    body .process img {
       -webkit-transition: all 1s;
       transition: all 1s; }
-      body .prosess img:hover {
+      body .process img:hover {
         -webkit-transform: scale(1.05);
                 transform: scale(1.05); }
   body .company {
@@ -516,8 +542,8 @@ body {
       font-weight: 300;
       padding-bottom: 5rem; }
     body .quation input {
-      width: 240px;
-      height: 50px;
+      width: 24rem;
+      height: 5rem;
       border-radius: 10px;
       border: none;
       padding-left: 1.2rem;
@@ -555,55 +581,147 @@ body {
         color: #19b5fe; }
     body footer hr {
       background-color: #50504c; }
-    body footer img {
-      vertical-align: middle; }
     body footer i {
       padding: 0.7rem; }
 
 /* *******DESKTOP LARGE SCREEN SIZE******** */
 @media screen and (max-width: 1200px) {
-  body header .bgc-btn {
-    display: none; }
-  body main .radio hr {
-    width: 48rem; } }
+  body header {
+    position: relative; }
+    body header .bgc-btn {
+      display: none; }
+    body header .menu ul {
+      position: absolute;
+      left: -12rem;
+      height: 50rem; }
+  body main {
+    position: relative; }
+    body main .radio {
+      width: 100%;
+      padding-bottom: 3.5rem; }
+      body main .radio input[type="range"] {
+        position: absolute;
+        width: 50rem;
+        top: 9.2rem; }
+      body main .radio .box-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: -1rem; }
+        body main .radio .box-text .box-1 {
+          padding-left: 2rem; }
+        body main .radio .box-text .box-2 {
+          padding-left: 5rem; }
+        body main .radio .box-text .box-3 {
+          padding-left: 10rem; }
+        body main .radio .box-text .box-4 {
+          padding-left: 15rem; }
+      body main .radio .circle {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        margin-bottom: 2.5rem;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 2.5rem; }
+      body main .radio .box_1 {
+        left: 0; }
+      body main .radio .box_2 {
+        left: 2rem; }
+      body main .radio .box_3 {
+        left: 10.3rem; }
+      body main .radio .box_4 {
+        left: 22.5rem; }
+    body main .paket {
+      width: 100%; }
+      body main .paket button {
+        width: 16rem; }
+      body main .paket div {
+        margin-top: 2rem; }
+      body main .paket .textOne,
+      body main .paket .textTwo,
+      body main .paket .textThree {
+        position: absolute;
+        left: 7rem;
+        width: 40rem;
+        height: 13rem;
+        top: 8rem; }
+      body main .paket .textThree {
+        left: 14rem; }
+      body main .paket .textOne {
+        left: 0; }
+  body .quation .inputs input {
+    width: 20rem; } }
 @media screen and (max-width: 992px) {
   body header {
     position: relative; }
     body header .phone h4 {
       font-size: 1rem; }
-    body header nav .hidden ul {
+    body header nav ul {
       position: absolute;
-      right: -10rem; }
+      left: 5rem; }
     body header .bgc-btn {
       display: none; }
   body .design img {
     width: 100%; }
-  body main .radio ul li {
-    margin-right: 0.2rem; }
-    body main .radio ul li span {
-      font-size: 1em; }
-    body main .radio ul li input[type="radio"] {
-      width: 2rem;
-      height: 2rem;
-      margin-left: 1.1rem; }
-  body main .radio hr {
-    width: 33rem; }
-  body main .paket {
-    padding-bottom: 1rem; }
-    body main .paket button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      text-align: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      margin: 1rem auto;
-      width: 80%; }
-  body main .check .btn {
-    width: 90%; }
+  body main {
+    position: relative; }
+    body main .radio {
+      width: 100%;
+      padding-bottom: 3.5rem; }
+      body main .radio input[type="range"] {
+        position: absolute;
+        width: 41rem; }
+      body main .radio .box-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: -1rem; }
+        body main .radio .box-text .box-1 {
+          padding-left: 2rem; }
+        body main .radio .box-text .box-2 {
+          padding-left: 4rem; }
+        body main .radio .box-text .box-3 {
+          padding-left: 7rem; }
+        body main .radio .box-text .box-4 {
+          padding-left: 11rem; }
+      body main .radio .circle {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        margin-bottom: 2.5rem;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 2.5rem; }
+      body main .radio .box_1 {
+        left: 0; }
+      body main .radio .box_2 {
+        left: 0.3rem; }
+      body main .radio .box_3 {
+        left: 6rem; }
+      body main .radio .box_4 {
+        left: 14.5rem; }
+    body main .paket {
+      width: 100%;
+      padding: 1rem 4rem; }
+      body main .paket button {
+        width: 100%; }
+      body main .paket div {
+        margin-top: 2rem; }
+      body main .paket .textOne,
+      body main .paket .textTwo,
+      body main .paket .textThree {
+        position: absolute;
+        left: 5.1rem;
+        top: 9.5rem;
+        width: 38rem;
+        height: 13rem;
+        -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+                clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+      body main .paket .textThree {
+        top: 23rem; }
+      body main .paket .textTwo {
+        top: 16rem; }
   body .portfel .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -615,7 +733,7 @@ body {
   body .portfel button {
     padding: 1rem 1.4rem; }
   body .quation input {
-    width: 46.5rem;
+    width: 100%;
     height: 5rem;
     margin-top: 1rem; }
   body .quation .icons {
@@ -624,8 +742,6 @@ body {
     margin-bottom: -3rem; } }
 /* ********TABLET MEDIUM SCREEN SIZE********** */
 @media screen and (max-width: 768px) {
-  body header .logo {
-    padding-left: 3rem; }
   body header .phone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -634,6 +750,53 @@ body {
         -ms-flex-pack: end;
             justify-content: end;
     padding-left: 4rem; }
+  body header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    body header .menu .logo_l {
+      width: 100%; }
+    body header .menu .phone h4 {
+      font-size: 0.6em; }
+    body header .menu .nav {
+      margin-top: 1rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: auto; }
+      body header .menu .nav ul {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        background: none;
+        position: relative;
+        left: -35rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        body header .menu .nav ul li {
+          text-align: center;
+          font-size: 1.2em;
+          -webkit-box-shadow: 0 0 6px #19b5fe;
+                  box-shadow: 0 0 6px #19b5fe;
+          width: 30rem;
+          height: 5rem;
+          border: 2px solid #FFFFFF;
+          border-radius: 5px;
+          margin-top: 0.5rem; }
+          body header .menu .nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none; }
+            body header .menu .nav ul li a:hover {
+              color: #19b5fe; }
+    body header .menu .logo {
+      width: 100px;
+      height: 50px; }
+    body header .menu p {
+      font-size: 1em; }
   body header .contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,30 +810,75 @@ body {
             flex-direction: column; }
     body header .contact input {
       width: 100%; }
+  body header .cat {
+    display: none; }
+  body header .temp {
+    margin-bottom: 3rem; }
+  body .design img {
+    margin-bottom: 2rem; }
   body .design h2 {
     text-align: center; }
   body .design .btn {
     width: 100%;
     margin-bottom: 2rem; }
-  body main span {
-    font-size: 1.5em; }
-  body main .radio span {
-    font-size: 1em; }
-  body main .radio input[type="radio"] {
-    width: 2.5rem;
-    height: 2.5rem; }
-  body main .radio hr {
-    display: none; }
-  body main .paket {
-    padding-bottom: 1rem;
-    margin-bottom: 2rem; }
-  body main .check .btn {
-    width: 90%;
-    font-size: 1.2em; }
-  body main .check span {
-    font-size: 1.5em; }
-  body main .check p {
-    font-size: 1.5em; }
+  body main {
+    position: relative; }
+    body main .radio {
+      width: 100%;
+      padding-bottom: 3.5rem; }
+      body main .radio input[type="range"] {
+        position: absolute;
+        width: 45.5rem; }
+      body main .radio .box-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: -1rem; }
+        body main .radio .box-text .box-1 {
+          padding-left: 2rem; }
+        body main .radio .box-text .box-2 {
+          padding-left: 4rem; }
+        body main .radio .box-text .box-3 {
+          padding-left: 7rem; }
+        body main .radio .box-text .box-4 {
+          padding-left: 15.5rem; }
+      body main .radio .circle {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        margin-bottom: 2.5rem;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 2.5rem; }
+      body main .radio .box_1 {
+        left: 0; }
+      body main .radio .box_2 {
+        left: 1.5rem; }
+      body main .radio .box_3 {
+        left: 8.7rem; }
+      body main .radio .box_4 {
+        left: 19rem; }
+    body main .paket {
+      width: 100%;
+      padding: 1rem 4rem; }
+      body main .paket button {
+        width: 100%; }
+      body main .paket div {
+        margin-top: 2rem; }
+      body main .paket .textOne,
+      body main .paket .textTwo,
+      body main .paket .textThree {
+        position: absolute;
+        left: 5.1rem;
+        top: 9.5rem;
+        width: 38rem;
+        height: 13rem;
+        -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+                clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+      body main .paket .textThree {
+        top: 23rem; }
+      body main .paket .textTwo {
+        top: 16rem; }
   body .portfel .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,24 +905,52 @@ body {
 @media screen and (max-width: 576px) {
   body {
     font-size: 18px; }
-    body header .menu .phone {
-      margin-top: 3rem; }
-      body header .menu .phone h4 {
-        font-size: 0.8em; }
-    body header .menu .nav {
-      margin-top: 1rem;
+    body header .menu {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: end;
-      margin-left: auto; }
-    body header .menu .logo {
-      width: 100px;
-      height: 50px; }
-    body header .menu p {
-      font-size: 1em; }
+      display: flex; }
+      body header .menu .logo_l {
+        width: 100%; }
+      body header .menu .phone h4 {
+        font-size: 0.6em; }
+      body header .menu .nav {
+        margin-top: 1rem;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: auto; }
+        body header .menu .nav ul {
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          background: none;
+          position: relative;
+          left: -30rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          body header .menu .nav ul li {
+            text-align: center;
+            font-size: 1.2em;
+            -webkit-box-shadow: 0 0 6px #19b5fe;
+                    box-shadow: 0 0 6px #19b5fe;
+            width: 30rem;
+            border: 2px solid #FFFFFF;
+            border-radius: 5px;
+            margin-top: 0.1rem; }
+            body header .menu .nav ul li a {
+              color: #FFFFFF;
+              text-decoration: none; }
+              body header .menu .nav ul li a:hover {
+                color: #19b5fe; }
+      body header .menu .logo {
+        width: 100px;
+        height: 50px; }
+      body header .menu p {
+        font-size: 1em; }
     body header .text-sup h1 {
       font-size: 2em; }
     body header .text-sup h3 {
@@ -725,18 +961,70 @@ body {
       margin: 0 3rem; }
     body .design hr {
       display: none; }
-    body main .row {
-      margin: 0 3rem; }
-    body main h1 {
-      padding-bottom: 2rem; }
-    body main hr {
-      display: none; }
-    body main .radio ul li {
-      font-size: 0.7em; }
-      body main .radio ul li input[type="radio"] {
-        margin-top: 1.3rem;
-        width: 3rem;
-        height: 3rem; }
+    body main {
+      position: relative; }
+      body main hr {
+        display: none; }
+      body main .radio {
+        width: 100%;
+        padding-bottom: 3.5rem; }
+        body main .radio input[type="range"] {
+          position: absolute;
+          width: 30rem;
+          top: 10rem;
+          left: 1.5rem; }
+        body main .radio .box-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: -1rem; }
+          body main .radio .box-text .box-1 {
+            padding-left: 1rem; }
+          body main .radio .box-text .box-2 {
+            padding-left: 1.5rem; }
+          body main .radio .box-text .box-3 {
+            padding-left: 2rem; }
+          body main .radio .box-text .box-4 {
+            padding-left: 6rem; }
+        body main .radio .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          margin-bottom: 2.5rem; }
+        body main .radio .box_1 {
+          left: -0.4rem; }
+        body main .radio .box_2 {
+          left: -2.5rem; }
+        body main .radio .box_3 {
+          left: -0.4rem; }
+        body main .radio .box_4 {
+          left: 2rem; }
+      body main .paket {
+        width: 100%;
+        padding: 0; }
+        body main .paket button {
+          width: 90%; }
+        body main .paket div {
+          margin-top: 2rem; }
+        body main .paket .textOne,
+        body main .paket .textTwo,
+        body main .paket .textThree {
+          position: absolute;
+          left: 0;
+          top: 8.5rem;
+          width: 34rem;
+          height: 15rem;
+          -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+                  clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+        body main .paket .textThree {
+          top: 23rem; }
+        body main .paket .textTwo {
+          top: 16rem; }
+      body main .check {
+        margin-top: 2rem; }
     body .portfel hr {
       display: none; }
     body .portfel .buttons {
@@ -768,10 +1056,14 @@ body {
           margin-top: 0.2rem; }
     body aside .aside-text hr {
       display: none; }
-    body .prosess hr {
+    body .process .process-text {
+      margin-top: 3rem; }
+    body .process hr {
       display: none; }
-    body .prosess p {
-      font-size: 1.5em; }
+    body .process p {
+      font-size: 1.5em;
+      font-weight: 700;
+      padding: 2rem 0; }
     body .company .comp-text h1 {
       padding-bottom: 4rem;
       font-size: 1.7em; }
