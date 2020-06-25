@@ -127,7 +127,6 @@
 @media screen and (max-width: 992px) {
   body {
 
-
     header {
       position: relative;
 
@@ -248,12 +247,6 @@
           top: 16rem;
         }
 
-      }
-
-      .btn {
-        // width: 10rem;
-        // height: 5rem;
-        // padding: 0;
       }
     }
 
@@ -411,7 +404,7 @@
 
         input[type="range"] {
           position: absolute;
-          width: 45.5rem;
+          width: 42.5rem;
         }
 
         .box-text {
@@ -432,7 +425,7 @@
           }
 
           .box-4 {
-            padding-left: 15.5rem;
+            padding-left: 12.5rem;
           }
         }
 
@@ -459,7 +452,7 @@
         }
 
         .box_4 {
-          left: 19rem;
+          left: 15rem;
         }
       }
 
@@ -531,6 +524,7 @@
         display: inline-block;
         margin: 2rem auto;
         margin-bottom: -3rem;
+        padding-left: calc(100%/5);
       }
     }
   }
@@ -643,7 +637,7 @@
 
         input[type="range"] {
           position: absolute;
-          width: 30rem;
+          width: 41rem;
           top: 10rem;
           left: 1.5rem;
         }
@@ -662,11 +656,11 @@
           }
 
           .box-3 {
-            padding-left: 2rem;
+            padding-left: 6rem;
           }
 
           .box-4 {
-            padding-left: 6rem;
+            padding-left: 12rem;
           }
         }
 
@@ -685,15 +679,15 @@
         }
 
         .box_2 {
-          left: -2.5rem;
+          left: -1.1rem;
         }
 
         .box_3 {
-          left: -0.4rem;
+          left: 4.5rem;
         }
 
         .box_4 {
-          left: 2rem;
+          left: 13rem;
         }
       }
 
@@ -739,6 +733,10 @@
 
       hr {
         display: none;
+      }
+
+      h1 {
+        padding-bottom: 3rem;
       }
 
       .buttons {
@@ -832,8 +830,139 @@
     footer {
       .footer-nav {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 4rem;
+        // flex-direction: column;
+      }
+
+      .copy {
+        padding-left: 4rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    main {
+      hr {
+        display: none;
+      }
+
+      position: relative;
+
+      .radio {
+        width: 100%;
+        padding-bottom: 3.5rem;
+
+        input[type="range"] {
+          position: absolute;
+          width: 30.5rem;
+          top: 10rem;
+          left: 1.5rem;
+        }
+
+        .box-text {
+          display: flex;
+          margin-top: -1rem;
+
+
+          .box-1 {
+            padding-left: 1rem;
+          }
+
+          .box-2 {
+            padding-left: 1.5rem;
+          }
+
+          .box-3 {
+            padding-left: 2rem;
+          }
+
+          .box-4 {
+            padding-left: 5rem;
+          }
+        }
+
+        .circle {
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          margin-bottom: 2.5rem;
+          background-color: $primary-color-text;
+          border-radius: 50%;
+          margin-bottom: 2.5rem;
+        }
+
+        .box_1 {
+          left: -0.4rem;
+        }
+
+        .box_2 {
+          left: -2.8rem;
+        }
+
+        .box_3 {
+          left: -0.5rem;
+        }
+
+        .box_4 {
+          left: 2.8rem;
+        }
+      }
+
+      .paket {
+        width: 100%;
+        padding: 0;
+
+        button {
+          width: 90%;
+        }
+
+        div {
+          margin-top: 2rem;
+        }
+
+        .textOne,
+        .textTwo,
+        .textThree {
+          position: absolute;
+          left: 0;
+          top: 8.5rem;
+          width: 100%;
+          height: 15rem;
+          clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+        }
+
+        .textThree {
+          top: 23rem;
+        }
+
+        .textTwo {
+          top: 16rem;
+        }
+
+      }
+
+      .check {
+        margin-top: 2rem;
+      }
+    }
+
+    .company {
+      .slider {
+
+        img {
+          width: 100%;
+          height: 5rem;
+          margin-bottom: 3rem;
+
+        }
+      }
+
+      input[type="range"] {
+        margin-top: 5rem;
       }
     }
   }

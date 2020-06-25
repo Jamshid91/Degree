@@ -1,3 +1,40 @@
+.modal-request {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: none;
+}
+.modal-list {
+  width: 70rem;
+  max-width: 95%;
+  min-height: 40rem;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin: auto;
+  padding: 4rem 4.5rem;
+  margin-top: 150px;
+  position: relative;
+}
+.modal-close {
+  font-size: 3em;
+  cursor: pointer;
+position: absolute;
+top: -5px;
+right: 10px;
+}
+.info-modal {
+  font-size: 20px;
+  padding-top: 5px;
+}
+.info-user {
+  padding-left: 25px;
+  font-weight: 700;
+}
+
 ::-webkit-scrollbar {
   width: 12px; }
 
@@ -14,8 +51,7 @@
 .slider::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #e3e7e8;
-  -webkit-box-shadow: inset 0 0 0 4px #f5f9fa;
-          box-shadow: inset 0 0 0 4px #f5f9fa; }
+  box-shadow: inset 0 0 0 4px #f5f9fa; }
 
 .slider::-webkit-scrollbar-thumb {
   height: 20px;
@@ -50,7 +86,8 @@ body {
     border-radius: 0.5rem;
     padding: 0.7rem;
     color: #FFFFFF;
-    margin: 1rem; }
+    margin: 1rem;
+  cursor: pointer; }
     body i:hover {
       border: 1px solid #19b5fe;
       color: #19b5fe; }
@@ -64,10 +101,12 @@ body {
       body header .menu .phone-text {
         padding-left: 0.5rem;
         padding-top: 0.8rem; }
-        body header .menu .phone-text h4 {
+        body header .menu .phone-text a {
           color: #FFFFFF;
           font-size: 0.75em;
           font-weight: 300; }
+          body header .menu .phone-text a:focus {
+            color: #19b5fe;}
           body header .menu .phone-text h4 p {
             font-size: 1.6em;
             font-weight: 500; }
@@ -78,13 +117,9 @@ body {
         margin: 0.2rem 0;
         background-color: #FFFFFF;
         cursor: pointer; }
-        body header .menu .nav .menu-burger span:hover {
-          background-color: #19b5fe; }
       body header .menu .nav p {
         color: #FFFFFF;
         cursor: pointer; }
-        body header .menu .nav p:hover {
-          color: #19b5fe; }
       body header .menu .nav .hidden {
         display: none; }
       body header .menu .nav ul {
@@ -95,8 +130,7 @@ body {
         body header .menu .nav ul li {
           display: block;
           width: 20rem;
-          -webkit-box-shadow: 0 0 10px #19b5fe;
-                  box-shadow: 0 0 10px #19b5fe;
+          box-shadow: 0 0 10px #19b5fe;
           border: 1px solid #FFFFFF;
           background-color: #19b5fe;
           font-size: 1.2em;
@@ -140,7 +174,8 @@ body {
         margin-left: 0.8rem;
         margin-bottom: 3.5rem; }
         body header .contact input:focus {
-          outline: none; }
+          outline: none;
+          border: 1px solid #19b5fe; }
         body header .contact input:active {
           border: 2px solid #19b5fe; }
     body header .btn {
@@ -152,30 +187,20 @@ body {
     body header .temp .cat {
       padding-top: 7.5rem;
       padding-bottom: 5.5rem;
-      -webkit-animation: anim 1s alternate infinite;
-              animation: anim 1s alternate infinite; }
-@-webkit-keyframes anim {
-  0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
-  100% {
-    -webkit-transform: scaleY(1.3);
-            transform: scaleY(1.3); } }
+      animation: anim 0.8s ease alternate infinite; }
 @keyframes anim {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); }
+    transform: translateY(0); }
   100% {
-    -webkit-transform: scaleY(1.3);
-            transform: scaleY(1.3); } }
+    transform: translateY(-10px); } }
+    body header .cat {
+      transform: translateY(2rem); }
   body .design {
     padding: 7rem 0; }
     body .design img {
-      -webkit-transition: 0.5s;
       transition: 0.5s; }
       body .design img:hover {
-        -webkit-transform: scale(1.03);
-                transform: scale(1.03); }
+        transform: scale(1.03); }
     body .design .my h1 {
       font-size: 2.25em;
       font-weight: 400; }
@@ -186,25 +211,20 @@ body {
       margin-top: 1.5rem;
       margin-bottom: 3.5rem; }
     body .design .revese {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
+      flex-direction: row-reverse; }
     body .design .extra {
       padding: 2rem 0; }
   body main {
     background-image: url(../images/changeHouse.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    padding: 6.5rem 0; }
     body main .main-text h1 {
       font-size: 2.25em;
       font-weight: 400;
-      color: #FFFFFF;
-      padding-top: 6.5rem; }
+      color: #FFFFFF; }
     body main .main-text hr {
       width: 380px;
       height: 1.3px;
@@ -222,8 +242,6 @@ body {
       position: relative;
       padding: 2rem 0; }
       body main .radio .box-text {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         margin-top: -1rem; }
         body main .radio .box-text .box-1 {
@@ -241,8 +259,6 @@ body {
         font-size: 1.25em;
         padding-left: 2rem; }
       body main .radio .box-circles {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex; }
         body main .radio .box-circles .circle {
           width: 2rem;
@@ -295,14 +311,14 @@ body {
         margin-left: 1.3rem;
         margin-bottom: 2.5rem;
         color: #FFFFFF;
-        -webkit-transition: all 1s;
         transition: all 1s; }
         body main .paket button:hover {
-          -webkit-transform: scale(1.01);
-                  transform: scale(1.01);
+          transform: scale(1.01);
           background-color: #19b5fe;
           color: #FFFFFF;
           border: none; }
+        body main .paket button:focus {
+          background-color: #19b5fe; }
       body main .paket .textOne,
       body main .paket .textTwo,
       body main .paket .textThree {
@@ -312,8 +328,7 @@ body {
       body main .paket .btn-three-text {
         width: 44.5rem;
         height: 13rem;
-        -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
-                clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
+        clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
         background-color: #fff;
         padding: 5rem 2rem;
         font-size: 0.85em;
@@ -323,49 +338,39 @@ body {
         left: 10rem;
         border-radius: 1rem; }
       body main .paket .btn-one-text {
-        -webkit-clip-path: polygon(25% 0, 31% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 20% 20%);
-                clip-path: polygon(25% 0, 31% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 20% 20%);
+        clip-path: polygon(25% 0, 31% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 20% 20%);
         left: 0; }
       body main .paket .btn-three-text {
         left: 20.3rem;
-        -webkit-clip-path: polygon(75% 0, 81% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 69% 20%);
-                clip-path: polygon(75% 0, 81% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 69% 20%); }
-    body main .check {
-      padding-bottom: 6.5rem; }
-      body main .check .area {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        body main .check .area p {
-          padding-left: 0.5rem;
-          font-size: 2.3em;
-          color: #FFFFFF; }
-          body main .check .area p sup {
-            font-size: 0.6em; }
-      body main .check strong {
-        color: #FFFFFF;
-        font-weight: 100; }
-      body main .check span {
-        color: #FFFFFF;
-        font-size: 2em; }
-      body main .check .btn {
-        width: 100%;
-        border-radius: 5rem;
-        font-size: 0.9em;
-        margin: 2rem; }
-      body main .check h4 {
+        clip-path: polygon(75% 0, 81% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 69% 20%); }
+    body main .check .area {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+      body main .check .area p {
+        padding-left: 0.5rem;
+        font-size: 2.3em;
         color: #FFFFFF; }
-      body main .check h5 {
-        color: #FFFFFF;
-        font-weight: 100; }
+        body main .check .area p sup {
+          font-size: 0.6em; }
+    body main .check strong {
+      color: #FFFFFF;
+      font-weight: 100; }
+    body main .check span {
+      color: #FFFFFF;
+      font-size: 2em; }
+    body main .check .btn {
+      width: 80%;
+      border-radius: 5rem;
+      font-size: 0.9em;
+      margin: auto; }
+    body main .check h4 {
+      color: #FFFFFF; }
+    body main .check h5 {
+      color: #FFFFFF;
+      font-weight: 100;
+      padding-top: 2rem; }
   body .portfel h1 {
     font-size: 2.2em;
     font-weight: 400;
@@ -379,7 +384,6 @@ body {
     margin: 2.5rem 0; }
   body .portfel button {
     padding: 1rem 4rem;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     background: none;
     border-right: none;
@@ -390,8 +394,7 @@ body {
     text-transform: uppercase;
     font-size: 0.85em; }
     body .portfel button:hover {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
+      transform: scale(1.05);
       background-color: #19b5fe;
       color: #FFFFFF;
       border-radius: 1rem; }
@@ -406,11 +409,9 @@ body {
     padding: 5rem 0; }
   body .portfel img {
     margin-bottom: 2rem;
-    -webkit-transition: all 1s;
     transition: all 1s; }
     body .portfel img:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      transform: scale(1.1); }
   body aside {
     background-color: #f5f9fa;
     padding-bottom: 7rem; }
@@ -445,14 +446,11 @@ body {
       margin-top: 1.55rem; }
     body .process p {
       font-size: 2em;
-      -webkit-columns: #464646;
-              columns: #464646; }
+      columns: #464646; }
     body .process img {
-      -webkit-transition: all 1s;
       transition: all 1s; }
       body .process img:hover {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05); }
+        transform: scale(1.05); }
   body .company {
     background-color: #f5f9fa;
     padding: 5rem 0 6rem 0; }
@@ -475,8 +473,7 @@ body {
         width: 40%; }
       body .company .slider a {
         width: 20%;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; }
+        flex-shrink: 0; }
   body .my-comand {
     padding: 6rem 0; }
     body .my-comand h1 {
@@ -604,8 +601,6 @@ body {
         width: 50rem;
         top: 9.2rem; }
       body main .radio .box-text {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         margin-top: -1rem; }
         body main .radio .box-text .box-1 {
@@ -673,8 +668,6 @@ body {
         position: absolute;
         width: 41rem; }
       body main .radio .box-text {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         margin-top: -1rem; }
         body main .radio .box-text .box-1 {
@@ -716,19 +709,14 @@ body {
         top: 9.5rem;
         width: 38rem;
         height: 13rem;
-        -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
-                clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+        clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
       body main .paket .textThree {
         top: 23rem; }
       body main .paket .textTwo {
         top: 16rem; }
   body .portfel .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     font-size: 1.1em; }
   body .portfel button {
     padding: 1rem 1.4rem; }
@@ -743,16 +731,10 @@ body {
 /* ********TABLET MEDIUM SCREEN SIZE********** */
 @media screen and (max-width: 768px) {
   body header .phone {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    justify-content: end;
     padding-left: 4rem; }
   body header .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
     body header .menu .logo_l {
       width: 100%; }
@@ -760,28 +742,19 @@ body {
       font-size: 0.6em; }
     body header .menu .nav {
       margin-top: 1rem;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      justify-content: center;
       margin-left: auto; }
       body header .menu .nav ul {
-        -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         background: none;
         position: relative;
         left: -35rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+        flex-direction: column; }
         body header .menu .nav ul li {
           text-align: center;
           font-size: 1.2em;
-          -webkit-box-shadow: 0 0 6px #19b5fe;
-                  box-shadow: 0 0 6px #19b5fe;
+          box-shadow: 0 0 6px #19b5fe;
           width: 30rem;
           height: 5rem;
           border: 2px solid #FFFFFF;
@@ -798,16 +771,9 @@ body {
     body header .menu p {
       font-size: 1em; }
   body header .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    justify-content: center;
+    flex-direction: column; }
     body header .contact input {
       width: 100%; }
   body header .cat {
@@ -828,10 +794,8 @@ body {
       padding-bottom: 3.5rem; }
       body main .radio input[type="range"] {
         position: absolute;
-        width: 45.5rem; }
+        width: 42.5rem; }
       body main .radio .box-text {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         margin-top: -1rem; }
         body main .radio .box-text .box-1 {
@@ -841,7 +805,7 @@ body {
         body main .radio .box-text .box-3 {
           padding-left: 7rem; }
         body main .radio .box-text .box-4 {
-          padding-left: 15.5rem; }
+          padding-left: 12.5rem; }
       body main .radio .circle {
         width: 2rem;
         height: 2rem;
@@ -857,7 +821,7 @@ body {
       body main .radio .box_3 {
         left: 8.7rem; }
       body main .radio .box_4 {
-        left: 19rem; }
+        left: 15rem; }
     body main .paket {
       width: 100%;
       padding: 1rem 4rem; }
@@ -873,15 +837,12 @@ body {
         top: 9.5rem;
         width: 38rem;
         height: 13rem;
-        -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
-                clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+        clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
       body main .paket .textThree {
         top: 23rem; }
       body main .paket .textTwo {
         top: 16rem; }
   body .portfel .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 0.9em;
     margin: 0 4rem; }
@@ -900,14 +861,13 @@ body {
   body .quation .icons {
     display: inline-block;
     margin: 2rem auto;
-    margin-bottom: -3rem; } }
+    margin-bottom: -3rem;
+    padding-left: calc(100%/5); } }
 /* **********MOBILE SMALL SCREEN SIZE********** */
 @media screen and (max-width: 576px) {
   body {
     font-size: 18px; }
     body header .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex; }
       body header .menu .logo_l {
         width: 100%; }
@@ -915,28 +875,19 @@ body {
         font-size: 0.6em; }
       body header .menu .nav {
         margin-top: 1rem;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         margin-left: auto; }
         body header .menu .nav ul {
-          -webkit-box-shadow: none;
-                  box-shadow: none;
+          box-shadow: none;
           background: none;
           position: relative;
           left: -30rem;
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; }
+          flex-direction: column; }
           body header .menu .nav ul li {
             text-align: center;
             font-size: 1.2em;
-            -webkit-box-shadow: 0 0 6px #19b5fe;
-                    box-shadow: 0 0 6px #19b5fe;
+            box-shadow: 0 0 6px #19b5fe;
             width: 30rem;
             border: 2px solid #FFFFFF;
             border-radius: 5px;
@@ -970,12 +921,10 @@ body {
         padding-bottom: 3.5rem; }
         body main .radio input[type="range"] {
           position: absolute;
-          width: 30rem;
+          width: 41rem;
           top: 10rem;
           left: 1.5rem; }
         body main .radio .box-text {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
           margin-top: -1rem; }
           body main .radio .box-text .box-1 {
@@ -983,9 +932,9 @@ body {
           body main .radio .box-text .box-2 {
             padding-left: 1.5rem; }
           body main .radio .box-text .box-3 {
-            padding-left: 2rem; }
-          body main .radio .box-text .box-4 {
             padding-left: 6rem; }
+          body main .radio .box-text .box-4 {
+            padding-left: 12rem; }
         body main .radio .circle {
           width: 2rem;
           height: 2rem;
@@ -997,11 +946,11 @@ body {
         body main .radio .box_1 {
           left: -0.4rem; }
         body main .radio .box_2 {
-          left: -2.5rem; }
+          left: -1.1rem; }
         body main .radio .box_3 {
-          left: -0.4rem; }
+          left: 4.5rem; }
         body main .radio .box_4 {
-          left: 2rem; }
+          left: 13rem; }
       body main .paket {
         width: 100%;
         padding: 0; }
@@ -1017,8 +966,7 @@ body {
           top: 8.5rem;
           width: 34rem;
           height: 15rem;
-          -webkit-clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%);
-                  clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+          clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
         body main .paket .textThree {
           top: 23rem; }
         body main .paket .textTwo {
@@ -1027,23 +975,15 @@ body {
         margin-top: 2rem; }
     body .portfel hr {
       display: none; }
+    body .portfel h1 {
+      padding-bottom: 3rem; }
     body .portfel .buttons {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      flex-direction: column;
       font-size: 1.5em; }
       body .portfel .buttons a {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+        flex-direction: column; }
         body .portfel .buttons a button {
           border-right: 2px solid #19b5fe;
           border-radius: 1rem;
@@ -1078,13 +1018,79 @@ body {
     body .quation hr {
       display: none; }
     body footer .footer-nav {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+      justify-content: space-between;
+      padding-left: 4rem; }
+    body footer .copy {
+      padding-left: 4rem;
+      text-align: center; } }
+@media screen and (max-width: 376px) {
+  body main {
+    position: relative; }
+    body main hr {
+      display: none; }
+    body main .radio {
+      width: 100%;
+      padding-bottom: 3.5rem; }
+      body main .radio input[type="range"] {
+        position: absolute;
+        width: 30.5rem;
+        top: 10rem;
+        left: 1.5rem; }
+      body main .radio .box-text {
+        display: flex;
+        margin-top: -1rem; }
+        body main .radio .box-text .box-1 {
+          padding-left: 1rem; }
+        body main .radio .box-text .box-2 {
+          padding-left: 1.5rem; }
+        body main .radio .box-text .box-3 {
+          padding-left: 2rem; }
+        body main .radio .box-text .box-4 {
+          padding-left: 5rem; }
+      body main .radio .circle {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        margin-bottom: 2.5rem;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin-bottom: 2.5rem; }
+      body main .radio .box_1 {
+        left: -0.4rem; }
+      body main .radio .box_2 {
+        left: -2.8rem; }
+      body main .radio .box_3 {
+        left: -0.5rem; }
+      body main .radio .box_4 {
+        left: 2.8rem; }
+    body main .paket {
+      width: 100%;
+      padding: 0; }
+      body main .paket button {
+        width: 90%; }
+      body main .paket div {
+        margin-top: 2rem; }
+      body main .paket .textOne,
+      body main .paket .textTwo,
+      body main .paket .textThree {
+        position: absolute;
+        left: 0;
+        top: 8.5rem;
+        width: 100%;
+        height: 15rem;
+        clip-path: polygon(50% 0%, 56% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 44% 20%); }
+      body main .paket .textThree {
+        top: 23rem; }
+      body main .paket .textTwo {
+        top: 16rem; }
+    body main .check {
+      margin-top: 2rem; }
+  body .company .slider img {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 3rem; }
+  body .company input[type="range"] {
+    margin-top: 5rem; } }
+
+/*# sourceMappingURL=main.css.map */

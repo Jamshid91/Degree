@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -20,7 +21,9 @@
           <div class="phone d-flex align-self-center ml-auto justify-content-end">
             <img src="assets/images/phone.png" alt="" class="align-self-center">
             <div class="phone-text align-self-center">
-              <h4 class="align-self-center">Есть вапросы? Звоните !<p>8/800/259 09 36</p>
+              <a href="tel:8 800 259 09 36">
+                <h4 class="align-self-center">Есть вапросы? Звоните !<p>8/800/259 09 36</p>
+              </a>
               </h4>
             </div>
           </div>
@@ -59,13 +62,14 @@
         <div class="contact col-lg-10 col-md-10 col-sm-10 col-10 d-flex justify-content-center">
           <div class="bgc-btn">
           </div>
-          <input type="text" placeholder="Ваше имя"><input type="text" placeholder="E-mail"><input type="text"
-            placeholder="Номер  телефона">
+          <input type="text" id="name" placeholder="Ваше имя">
+          <input type="text" id="email" placeholder="E-mail">
+          <input type="text" id="number" placeholder="Номер  телефона">
         </div>
       </div>
       <div class="row justify-content-center text-center">
         <div class="col-lg-3">
-          <button class="btn">Оставьте заявку !</button>
+          <button class="btn btn-request">Оставьте заявку !</button>
         </div>
       </div>
 
@@ -89,6 +93,23 @@
     <div class="row justify-content-center d-flex flex-row-reverse">
       <div class="col-lg-6 col-md-6 col-sm-10 align-self-center"><img src="assets/images/integer.png" alt=""
           class="w-100">
+      </div>
+
+      <div class="modal-request">
+        <div class="modal-list">
+          <div class="d-flex align-items-center">
+            <h1 class="modal-title text-center pt-5">Ваша заявка отправлена</h1>
+            <i class="fa fa-check-square-o fa-3x pl-3" style="color: chartreuse;"></i>
+          </div>
+          <span class="modal-close" style="color: red;">&times;</span>
+
+          <div class="d-flex flex-column mt-4">
+            <h2 class="info-modal">Номер заявку: 1212</h2>
+            <span class='info-modal'>Ваше имя: <span class="info-user info-name"></span></span>
+            <span class='info-modal'>Ваше email: <span class="info-user info-email"></span></span>
+            <span class='info-modal'>Ваше Номер: <span class="info-user info-number"></span></span>
+          </div>
+        </div>
       </div>
 
       <div class="col-lg-6 col-md-6 col-sm-10 align-self-center">
@@ -153,24 +174,24 @@
               <div class="circle box_3"></div>
               <div class="circle box_4"></div>
             </div>
-            <input type="range" class="calc-house" value="0" min="0" max="5000">
+            <input type="range" class="calc-house" id='calcHouse' value="0" min="100" max="5000">
           </div>
 
           <div class="paket">
             <h4>Выберите пакет:</h4>
-            <button class="btn-one">Light</button>
+            <button class="btn-one" id="btnLight">Light</button>
             <div class="btn-one-text textOne">
               <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Знаках толку
                 снова, взобравшись сих страна рукописи.</p>
             </div>
 
-            <button class="btn-two">Medium</button>
+            <button class="btn-two" id="btnMedium">Medium</button>
             <div class="btn-two-text textTwo">
               <p>План расстановки мебели 3D визуализация. Все рабочие чертежи (план полов, план потолка, развертки по
                 стенам, план электросетей)</p>
             </div>
 
-            <button class="btn-three">Full</button>
+            <button class="btn-three" id='btnFull'>Full</button>
             <div class="btn-three-text textThree">
               <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Однажды снова
                 знаках буквоград алфавит? Одна курсивных семь безопасную?</p>
@@ -182,23 +203,23 @@
           class="check col-lg-5 col-md-4 col-sm-10 col-10 d-flex flex-column text-center justify-content-center no-gutters">
           <strong>Площадь помещения:</strong>
           <div class="area text-center">
-            <span class="range-cub">0</span>
+            <span class="range-cub" id="rangeCub">100</span>
             <p>м<sup>2</sup></p>
 
           </div>
           <strong>Средняя стоимость м<sup>2</sup>:</strong>
           <div class="area">
-            <span class="medium">0</span>
+            <span class="medium" id="medium">0</span>
             <p>тг.</p>
           </div>
           <strong>Средная стоимость объекта м<sup>2</sup>:</strong>
           <div class="area">
-            <span id="obj">0</span>
+            <span class="obj" id="mediumObj">0</span>
             <p>тг.</p>
           </div>
-          <button class="btn w-100 text-center">получит консультацию специалиста</button>
+          <button class="btn">получит консультацию специалиста</button>
           <h5>или позвоните нам по телефону :</h5>
-          <h4>+ 7 727 388 71 77</h4>
+          <h4><a class="text-wite" href="tel:+ 7 727 388 71 77">+ 7 727 388 71 77</a></h4>
         </div>
       </div>
     </div>
@@ -241,22 +262,22 @@
         </div>
       </div>
       <div class="row justify-content-center text-center">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon1.png" alt="">
           <hr>
           <p>Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы</p>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon2.png" alt="">
           <hr>
           <p>Интеративный подход, работаем до полного согласования с Вами</p>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon3.png" alt="">
           <hr>
           <p>Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)</p>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon4.png" alt="">
           <hr>
           <p>Над проектом работает группа специалистов под началом project менеджера в ERP системе</p>
@@ -264,12 +285,12 @@
       </div>
 
       <div class="row justify-content-center text-center">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon5.png" alt="">
           <hr>
           <p>Выполнение раньше установленных сроков</p>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-8">
           <img src="assets/images/icon6.png" alt="">
           <hr>
           <p>Дарим альбом проекта, вместе с 25% скидкой на следующее обращение</p>
@@ -395,8 +416,6 @@
             <a href=""><img src="assets/images/comp33.png" alt=""></a>
             <a href=""><img src="assets/images/comp34.png" alt=""></a>
             <a href=""><img src="assets/images/comp35.png" alt=""></a>
-
-
           </div>
         </div>
       </div>
@@ -507,11 +526,34 @@
         </div>
 
         <div class="icons col-lg-3 col-md-4 col-10 d-flex flex-column">
-          <li><i class="fa fa-phone"></i><span>+ 7 896 876 66 77</span></li>
-          <li><i class="fa fa-whatsapp" aria-hidden="true"></i><span>+ 7 896 876 66 77</span></li>
-          <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span>sales@23degree.kz</span></li>
-          <li><i class="fa fa-skype" aria-hidden="true"></i><span>skype: 23degree</span></li>
-          <li><i class="fa fa-telegram" aria-hidden="true"></i><span>telegram: 23degree</span></li>
+          <li>
+            <a href="tel:+7 896 876 66 77">
+              <i class="fa fa-phone"></i>
+            </a>
+            <span>+ 7 896 876 66 77</span>
+          </li>
+
+          <li>
+            <a href="whatsapp:+ 7 896 876 66 77">
+              <i class="fa fa-whatsapp"></i>
+            </a><span>+ 7 896 876 66 77</span>
+          </li>
+
+          <li>
+            <a href="mailto:sales@23degree.kz">
+              <i class="fa fa-envelope-o"></i>
+            </a><span>sales@23degree.kz</span>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-skype"></i>
+            </a><span>skype: 23degree</span>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-telegram"></i>
+            </a><span>telegram: 23degree</span>
+          </li>
           <p>График работы:с 9-00 до 18-00.Пн.-Пт.</p>
         </div>
       </div>
@@ -531,7 +573,7 @@
   <footer id="contact">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="footer-nav col-lg-6 col-md-8 col-sm-10  col-10 d-flex justify-content-between">
+        <div class="footer-nav col-lg-6 col-md-8  col-12 d-flex justify-content-between">
           <span>
             <a href="#">
               <p>Главная</p>
@@ -567,11 +609,12 @@
       </div>
       <hr>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-4 col-sm-8 co-10 align-self-center justify-content-center">
+        <div class="copy col-lg-4 col-md-4 col-sm-8 co-10 align-self-center justify-content-center">
           <p>© Kazteleport, 2015. Все права защищены</p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-10 ml-auto align-items-center align-self-center">
-          <p>Создание сайта - <img src="assets/images/footer-logo.png" alt="" class="align-self-center"></p>
+        <div class="d-flex col-lg-3 col-md-6 col-sm-6 col-10 ml-auto align-items-center align-self-center text-center">
+          <p>Создание сайта - </p>
+          <img src="assets/images/footer-logo.png" alt="" class="align-self-center">
         </div>
       </div>
   </footer>
@@ -581,6 +624,7 @@
   <script src="assets/js/menuBurger.js"></script>
   <script src="assets/js/carusel.js"></script>
   <script src="assets/js/canculator.js"></script>
+  <script src="assets/js/request.js"></script>
 
 </body>
 

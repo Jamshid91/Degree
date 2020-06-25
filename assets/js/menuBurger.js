@@ -3,7 +3,6 @@ let menuText = document.querySelector('.menu-text');
 
 let hidden = document.querySelector('.hidden');
 let phone = document.querySelector('.phone');
-console.log(phone)
 
 
 menu.addEventListener('click', toggle);

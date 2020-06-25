@@ -1,14 +1,45 @@
-let calc = document.querySelector(".calc-house");
+const calcHouse = document.getElementById("calcHouse");
+const rangeCub = document.getElementById("rangeCub");
+const medium = document.getElementById("medium");
+const mediumObj = document.getElementById("mediumObj");
+const btnLight = document.getElementById("btnLight");
+const btnMedium = document.getElementById("btnMedium");
+const btnFull = document.getElementById("btnFull");
 
-calc.addEventListener("input", calcCost);
+btnLight.addEventListener('click', () => {
+  if (true) {
+    calcHouse.addEventListener('input', addPrice);
+    function addPrice() {
+      rangeCub.innerHTML = this.value;
+      medium.innerHTML = Math.round(this.value * 42.5);
+      mediumObj.innerHTML = Math.round(this.value * 425);
+    }
+  }
+  medium.innerHTML = '0'
+  mediumObj.innerHTML = '0'
+});
 
-function calcCost() {
-  let rangeCub = document.querySelector(".range-cub");
-  let medium = document.querySelector(".medium");
-  let mediumObj = document.getElementById("obj");
-
-  rangeCub.innerHTML = this.value++;
-  medium.innerHTML = Math.round(this.value * 4.85);
-  mediumObj.innerHTML = Math.round(this.value * 48.5);
-  console.log(mediumObj);
-}
+btnMedium.addEventListener('click', () => {
+  if (true) {
+    calcHouse.addEventListener('input', addPrice);
+    function addPrice() {
+      rangeCub.innerHTML = this.value;
+      medium.innerHTML = Math.round(this.value * 4.5);
+      mediumObj.innerHTML = Math.round(this.value * 450);
+    }
+  }
+  medium.innerHTML = '0'
+  mediumObj.innerHTML = '0'
+});
+btnFull.addEventListener('click', () => {
+  if (true) {
+    calcHouse.addEventListener('input', addPrice);
+    function addPrice() {
+      rangeCub.innerHTML = this.value;
+      medium.innerHTML = Math.round(this.value * 5);
+      mediumObj.innerHTML = Math.round(this.value * 500);
+    }
+  }
+  medium.innerHTML = '0'
+  mediumObj.innerHTML = '0'
+});

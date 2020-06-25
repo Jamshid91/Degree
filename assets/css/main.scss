@@ -8,6 +8,7 @@ $primary-text-color: #363636;
 $secondary-text-color: #757575;
 $divider-color: #BDBDBD;
 
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -111,6 +112,7 @@ body {
 
       .nav {
 
+
         .menu-burger {
           span {
             display: block;
@@ -120,10 +122,11 @@ body {
             background-color: $primary-color-text;
             cursor: pointer;
 
-            &:hover {
-              background-color: $accent-color;
-            }
+            // &:hover {
+            //   background-color: $accent-color;
+            // }
           }
+
         }
 
 
@@ -132,9 +135,9 @@ body {
           color: $primary-color-text;
           cursor: pointer;
 
-          &:hover {
-            color: $accent-color;
-          }
+          // &:hover {
+          //   color: $accent-color;
+          // }
         }
 
         .hidden {
@@ -221,6 +224,7 @@ body {
 
         &:focus {
           outline: none;
+          border: 1px solid $accent-color;
         }
 
         &:active {
@@ -244,18 +248,23 @@ body {
       .cat {
         padding-top: 7.5rem;
         padding-bottom: 5.5rem;
-        animation: anim 1s alternate infinite;
-      }
+        animation: anim 0.8s ease alternate infinite;
 
-      @keyframes anim {
-        0% {
-          transform: scaleY(1);
-        }
 
-        100% {
-          transform: scaleY(1.3);
+        @keyframes anim {
+          0% {
+            transform: translateY(0);
+          }
+
+          100% {
+            transform: translateY(-10px);
+          }
         }
       }
+    }
+
+    .cat {
+      transform: translateY(2rem);
     }
 
 
@@ -307,13 +316,13 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 6.5rem 0;
 
     .main-text {
       h1 {
         font-size: 2.25em;
         font-weight: 400;
         color: $primary-color-text;
-        padding-top: 6.5rem;
       }
 
       hr {
@@ -450,6 +459,10 @@ body {
           color: $primary-color-text;
           border: none;
         }
+
+        &:focus {
+          background-color: $accent-color;
+        }
       }
 
       .textOne,
@@ -488,7 +501,6 @@ body {
     }
 
     .check {
-      padding-bottom: 6.5rem;
 
       .area {
         display: flex;
@@ -518,10 +530,10 @@ body {
       }
 
       .btn {
-        width: 100%;
+        width: 80%;
         border-radius: 5rem;
         font-size: 0.9em;
-        margin: 2rem;
+        margin: auto;
       }
 
       h4 {
@@ -531,6 +543,7 @@ body {
       h5 {
         color: $primary-color-text;
         font-weight: 100;
+        padding-top: 2rem;
       }
     }
   }
