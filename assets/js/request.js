@@ -30,5 +30,8 @@ function clickRequest() {
 
 modalClose.addEventListener('click', () => {
   modalRequest.style.display = 'none';
+  name.value = '';
+  email.value = '';
+  number.value = '';
 })
 
