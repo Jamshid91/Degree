@@ -16,7 +16,8 @@
 }
 
 .slider::-webkit-scrollbar-track {
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   background-color: #e3e7e8;
   -webkit-box-shadow: inset 0 0 0 4px #f5f9fa;
           box-shadow: inset 0 0 0 4px #f5f9fa;
@@ -26,7 +27,8 @@
   height: 20px;
   background-image: url(../images/thumb.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
   background-color: transparent;
 }
 
@@ -44,7 +46,8 @@ body .btn {
   height: 60px;
   background-color: #19b5fe;
   color: #FFFFFF;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
   font-size: 1em;
 }
 
@@ -62,7 +65,8 @@ body i {
   width: 3rem;
   height: 3rem;
   border: 1px solid #FFFFFF;
-  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
   padding: 0.7rem;
   color: #FFFFFF;
   margin: 1rem;
@@ -74,8 +78,10 @@ body i:hover {
 }
 
 body header {
-  background-clip: url(../media/video_2021-07-01_13-03-07.mp4);
-  background-size: cover;
+  -webkit-background-clip: url(../media/video_2021-07-01_13-03-07.mp4);
+          background-clip: url(../media/video_2021-07-01_13-03-07.mp4);
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -156,18 +162,22 @@ body header .menu .nav .menu_burger_list {
   width: 100%;
   height: 3px;
   background-color: #fff;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 body header .menu .nav #burger_list1 {
   -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
           transform: translateY(-4px);
 }
 
 body header .menu .nav #burger_list3 {
   -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
           transform: translateY(4px);
 }
 
@@ -177,11 +187,13 @@ body header .menu .nav .change .menu_burger_list {
 
 body header .menu .nav .change #burger_list1 {
   -webkit-transform: translateY(4px) rotate(-45deg);
+      -ms-transform: translateY(4px) rotate(-45deg);
           transform: translateY(4px) rotate(-45deg);
 }
 
 body header .menu .nav .change #burger_list3 {
   -webkit-transform: translateY(-2px) rotate(45deg);
+      -ms-transform: translateY(-2px) rotate(45deg);
           transform: translateY(-2px) rotate(45deg);
 }
 
@@ -204,7 +216,8 @@ body header .bgc-btn {
   background-image: url(../images/left.png);
   width: 954px;
   height: 78px;
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
 }
 
 body header .text-sup {
@@ -233,7 +246,8 @@ body header .contact {
 body header .contact input {
   width: 290px;
   height: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
   border: none;
   padding-left: 2rem;
   margin-left: 0.8rem;
@@ -289,6 +303,7 @@ body header .temp .cat {
 
 body header .cat {
   -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
           transform: translateY(2rem);
 }
 
@@ -301,6 +316,7 @@ body header .hidden {
   background-color: #19b5fe;
   padding: 100px 20px;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -313,6 +329,7 @@ body header .hidden ul {
 body header .hidden ul li {
   margin-bottom: 10px;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
@@ -336,13 +353,16 @@ body header .topBtn {
   bottom: 30px;
   width: 35px;
   height: 35px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   background-color: #19b5fe;
   display: none;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -362,6 +382,7 @@ body header .topBtn a i:hover {
 
 body header .openBtn {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -372,11 +393,13 @@ body .design {
 
 body .design img {
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 body .design img:hover {
   -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
           transform: scale(1.03);
 }
 
@@ -395,10 +418,12 @@ body .design .my hr {
 
 body .design .revese {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
@@ -409,7 +434,8 @@ body .design .extra {
 
 body main {
   background-image: url(../images/changeHouse.png);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 6.5rem 0;
@@ -445,6 +471,7 @@ body main .radio {
 
 body main .radio .box-text {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-top: -1rem;
@@ -478,6 +505,7 @@ body main .radio h4 {
 
 body main .radio .box-circles {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -487,7 +515,8 @@ body main .radio .box-circles .circle {
   height: 2rem;
   margin-bottom: 2.5rem;
   background-color: #FFFFFF;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
 
 body main .radio .box-circles .box_1 {
@@ -511,7 +540,8 @@ body main .radio input[type="range"] {
   width: 61rem;
   height: 1rem;
   background-color: #fff6;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   top: 9rem;
   left: 1.9rem;
   outline: none;
@@ -525,14 +555,16 @@ body main .radio .calc-house::-webkit-slider-thumb {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #FFFFFF;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   border: 0.9rem solid #19b5fe;
 }
 
 body main .paket {
   width: 100%;
   border: 2px solid #FFFFFF;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   position: relative;
   margin-top: 1rem;
 }
@@ -552,11 +584,13 @@ body main .paket button {
   margin-bottom: 2.5rem;
   color: #FFFFFF;
   -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 body main .paket button:hover {
   -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
           transform: scale(1.01);
   background-color: #19b5fe;
   color: #FFFFFF;
@@ -587,7 +621,8 @@ body main .paket .btn-three-text {
   position: absolute;
   top: 10rem;
   left: 10rem;
-  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
 }
 
 body main .paket .btn-one-text {
@@ -604,14 +639,18 @@ body main .paket .btn-three-text {
 
 body main .check .area {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -638,7 +677,8 @@ body main .check span {
 
 body main .check .btn {
   width: 80%;
-  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+          border-radius: 5rem;
   font-size: 0.9em;
   margin: auto;
 }
@@ -673,6 +713,7 @@ body .portfel .buttons {
 body .portfel button {
   padding: 1rem 4rem;
   -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   background: none;
   border-right: none;
@@ -686,20 +727,24 @@ body .portfel button {
 
 body .portfel button:hover {
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
   background-color: #19b5fe;
   color: #FFFFFF;
-  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
 }
 
 body .portfel .end-btn {
-  border-radius: 0 2rem 2rem 0;
+  -webkit-border-radius: 0 2rem 2rem 0;
+          border-radius: 0 2rem 2rem 0;
   border-right: 2px solid #19b5fe;
   border-left: 1px solid #19b5fe;
 }
 
 body .portfel .start-btn {
-  border-radius: 2rem 0 0 2rem;
+  -webkit-border-radius: 2rem 0 0 2rem;
+          border-radius: 2rem 0 0 2rem;
   border-left: 2px solid #19b5fe;
 }
 
@@ -710,11 +755,13 @@ body .portfel .imges {
 body .portfel img {
   margin-bottom: 2rem;
   -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 body .portfel img:hover {
   -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
@@ -773,16 +820,19 @@ body .process hr {
 body .process p {
   font-size: 2em;
   -webkit-columns: #464646;
+     -moz-columns: #464646;
           columns: #464646;
 }
 
 body .process img {
   -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 body .process img:hover {
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
 
@@ -820,8 +870,9 @@ body .company .slider img {
 
 body .company .slider a {
   width: 20%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 body .my-comand {
@@ -900,7 +951,8 @@ body .blog a:hover {
 
 body .quation {
   background-image: url(../images/quation.png);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 5.5rem 0 6.5rem 0;
@@ -929,7 +981,8 @@ body .quation p {
 body .quation input {
   width: 24rem;
   height: 5rem;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   border: none;
   padding-left: 1.2rem;
   font-style: 0.5em;
@@ -941,7 +994,8 @@ body .quation input:focus {
 
 body .quation textarea {
   height: 125px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   padding: 1.2rem;
   margin: 1rem 0;
   resize: none;
@@ -1023,6 +1077,7 @@ body footer i {
   }
   body main .radio .box-text {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
@@ -1045,7 +1100,8 @@ body footer i {
     position: absolute;
     margin-bottom: 2.5rem;
     background-color: #FFFFFF;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 2.5rem;
   }
   body main .radio .box_1 {
@@ -1119,6 +1175,7 @@ body footer i {
   }
   body main .radio .box-text {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
@@ -1141,7 +1198,8 @@ body footer i {
     position: absolute;
     margin-bottom: 2.5rem;
     background-color: #FFFFFF;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 2.5rem;
   }
   body main .radio .box_1 {
@@ -1185,9 +1243,11 @@ body footer i {
   }
   body .portfel .buttons {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1.1em;
@@ -1211,15 +1271,18 @@ body footer i {
 @media screen and (max-width: 768px) {
   body header .phone {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
+    -webkit-justify-content: end;
         -ms-flex-pack: end;
             justify-content: end;
     padding-left: 4rem;
   }
   body header .menu {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1232,6 +1295,7 @@ body footer i {
   body header .menu .nav {
     margin-top: 1rem;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: auto;
@@ -1243,10 +1307,12 @@ body footer i {
     position: relative;
     left: -35rem;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1258,7 +1324,8 @@ body footer i {
     width: 30rem;
     height: 5rem;
     border: 2px solid #FFFFFF;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     margin-top: 0.5rem;
   }
   body header .menu .nav ul li a {
@@ -1277,13 +1344,16 @@ body footer i {
   }
   body header .contact {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1319,6 +1389,7 @@ body footer i {
   }
   body main .radio .box-text {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
@@ -1341,7 +1412,8 @@ body footer i {
     position: absolute;
     margin-bottom: 2.5rem;
     background-color: #FFFFFF;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 2.5rem;
   }
   body main .radio .box_1 {
@@ -1385,6 +1457,7 @@ body footer i {
   }
   body .portfel .buttons {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     font-size: 0.9em;
@@ -1395,11 +1468,13 @@ body footer i {
   }
   body .portfel .buttons .thr-btn {
     border-right: 2px solid #19b5fe;
-    border-radius: 0 2rem 2rem 0;
+    -webkit-border-radius: 0 2rem 2rem 0;
+            border-radius: 0 2rem 2rem 0;
   }
   body .portfel .buttons .end-btn {
     margin-top: 2rem;
-    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+            border-radius: 2rem;
   }
   body .quation input {
     width: 26.5rem;
@@ -1410,6 +1485,7 @@ body footer i {
     display: inline-block;
     margin: 2rem auto;
     margin-bottom: -3rem;
+    padding-left: -webkit-calc(100%/5);
     padding-left: calc(100%/5);
   }
 }
@@ -1421,6 +1497,7 @@ body footer i {
   }
   body header .menu {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1433,6 +1510,7 @@ body footer i {
   body header .menu .nav {
     margin-top: 1rem;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: auto;
@@ -1444,10 +1522,12 @@ body footer i {
     position: relative;
     left: -30rem;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -1458,7 +1538,8 @@ body footer i {
             box-shadow: 0 0 6px #19b5fe;
     width: 30rem;
     border: 2px solid #FFFFFF;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
     margin-top: 0.1rem;
   }
   body header .menu .nav ul li a {
@@ -1484,6 +1565,9 @@ body footer i {
   body header .text-sup p {
     font-size: 1em;
   }
+  body header .contact {
+    display: none !important;
+  }
   body .design .row {
     margin: 0 3rem;
   }
@@ -1508,6 +1592,7 @@ body footer i {
   }
   body main .radio .box-text {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
@@ -1530,7 +1615,8 @@ body footer i {
     position: absolute;
     margin-bottom: 2.5rem;
     background-color: #FFFFFF;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 2.5rem;
   }
   body main .radio .box_1 {
@@ -1583,34 +1669,41 @@ body footer i {
   }
   body .portfel .buttons {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 1.5em;
   }
   body .portfel .buttons a {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   body .portfel .buttons a button {
     border-right: 2px solid #19b5fe;
-    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+            border-radius: 1rem;
     margin-bottom: 1rem;
   }
   body .portfel .buttons a .thr-btn {
-    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+            border-radius: 1rem;
     border-left: 1px solid #19b5fe;
   }
   body .portfel .buttons a .end-btn {
-    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+            border-radius: 1rem;
     margin-top: 0.2rem;
   }
   body aside .aside-text hr {
@@ -1648,9 +1741,11 @@ body footer i {
   }
   body footer .footer-nav {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 4rem;
@@ -1680,6 +1775,7 @@ body footer i {
   }
   body main .radio .box-text {
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin-top: -1rem;
@@ -1702,7 +1798,8 @@ body footer i {
     position: absolute;
     margin-bottom: 2.5rem;
     background-color: #FFFFFF;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
     margin-bottom: 2.5rem;
   }
   body main .radio .box_1 {
@@ -1756,4 +1853,3 @@ body footer i {
     margin-top: 5rem;
   }
 }
-/*# sourceMappingURL=main.css.map */
