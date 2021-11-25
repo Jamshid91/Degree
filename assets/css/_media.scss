@@ -828,6 +828,14 @@
       hr {
         display: none;
       }
+      .inputs {
+        input {
+          width: 100%;
+        }
+      }
+      .icons {
+        padding: 0 !important;
+      }
     }
 
     footer {
@@ -835,12 +843,16 @@
         display: flex;
         justify-content: space-between;
         padding-left: 4rem;
+        flex-wrap: wrap;
         // flex-direction: column;
       }
 
       .copy {
         padding-left: 4rem;
         text-align: center;
+      }
+      .contact-us {
+        margin: 0 !important;
       }
     }
   }
