@@ -13,8 +13,12 @@
 
 <body>
   <header id="header">
+    <div class="video">
+      <video autoplay muted loop src="assets/media/doc_2021-07-01_13-30-30_Trim.mp4"></video>
+    </div>
+    <div class="black"></div>
     <div class="container">
-      <div class="row menu justify-content-center no-gutters">
+      <div class="row menu justify-content-center align-items-center">
         <div class="logo col-lg-3 col-md-3 col-sm-4 col-4  text-center"><a href="#"><img src="assets/images/logo.png"
               alt="" class="logo_l"></a></div>
         <div class="col-lg-7 col-md-5 col-sm-8 col-8 ml-auto align-self-center justify-content-end">
@@ -28,25 +32,12 @@
             </div>
           </div>
         </div>
-        <nav class="nav d-flex flex-column col-lg-1 col-md-1 col-sm-2 ml-auto col-2 justify-content-end">
-          <div class="menu-burger justify-content-end">
-            <span class="menu-item"></span>
-            <span class="menu-item"></span>
-            <span class="menu-item"></span>
-          </div>
-          <p class="menu-text">Menu</p>
-
-          <div class="hidden">
-            <ul>
-              <li><a href="#header">Главная</a></li>
-              <li><a href="#design">Наши услуги</a></li>
-              <li><a href="#canculator">Калькулятор</a></li>
-              <li><a href="#portfolio">Портфолио</a></li>
-              <li><a href="#process">Процесс</a></li>
-              <li><a href="#command">Наша команда</a></li>
-              <li><a href="#questions">Остались вопросы</a></li>
-              <li><a href="#contact">связаться с нами</a></li>
-            </ul>
+        <nav class="nav d-flex flex-column col-lg-1 col-md-1 col-sm-2 ml-auto col-2 justify-content-end position-relative">
+          <div class="menu_burger">
+            <div class="menu_burger_list" id="burger_list1"></div>
+            <div class="menu_burger_list" id="burger_list2"></div>
+            <div class="menu_burger_list" id="burger_list3"></div>
+            <span class="menu_text">menu</span>
           </div>
         </nav>
       </div>
@@ -54,7 +45,7 @@
         <div class="text-sup col-lg-8 col-md-10 col-sm-10 col-10">
           <h1>Услиги по 3D моделированию</h1>
           <h3>полный спектр услуг</h3>
-          <p>Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно !*</p>
+          <p>Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно !*</p>
         </div>
       </div>
 
@@ -73,12 +64,33 @@
         </div>
       </div>
 
-      <div class="row justify-content-center text-center">
-        <div class="temp">
-          <p>*Мы гарантируем конфидициальность передаваемых данных</p>
-          <img src="assets/images/cat.png" class="cat" alt="">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="temp">
+            <p>*Мы гарантируем конфидициальность передаваемых данных</p>
+            <img src="assets/images/cat.png" class="cat" alt="">
+          </div>
         </div>
       </div>
+    </div>
+    
+    <div class="hidden">
+      <ul>
+        <li><a href="#header">Главная</a></li>
+        <li><a href="#design">Наши услуги</a></li>
+        <li><a href="#canculator">Калькулятор</a></li>
+        <li><a href="#portfolio">Портфолио</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#command">Наша команда</a></li>
+        <li><a href="#questions">Остались вопросы</a></li>
+        <li><a href="#contact">Связаться с нами</a></li>
+      </ul>
+    </div>
+
+    <div class="topBtn">
+      <a href="#header" class="">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </div>
   </header>
 
@@ -95,7 +107,7 @@
           class="w-100">
       </div>
 
-      <div class="modal-request">
+      <div class="modal-request d-none">
         <div class="modal-list">
           <div class="d-flex align-items-center">
             <h1 class="modal-title text-center pt-5">Ваша заявка отправлена</h1>
@@ -619,8 +631,8 @@
       </div>
   </footer>
 
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery..js"></script>
+  <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/menuBurger.js"></script>
   <script src="assets/js/carusel.js"></script>
   <script src="assets/js/canculator.js"></script>

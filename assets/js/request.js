@@ -34,4 +34,3 @@ modalClose.addEventListener('click', () => {
   email.value = '';
   number.value = '';
 })
-
